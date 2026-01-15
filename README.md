@@ -1,0 +1,2 @@
+# seo-tool
+for seo
