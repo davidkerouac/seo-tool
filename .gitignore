@@ -36,3 +36,6 @@ coverage/
 # Generated files
 *.generated.html
 *.generated.xml
+generated-article.html
+sitemap.xml
+robots.txt
