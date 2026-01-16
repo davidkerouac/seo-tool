@@ -22,6 +22,12 @@ A comprehensive SEO toolkit for content generation, optimization, and analysis. 
 - **Meta Description Validator**: Check if meta descriptions are optimal length
 - **Content Structure Analyzer**: Analyze HTML structure and heading hierarchy
 
+### 💾 File Management
+- **Automatic File Saving**: Save all generated content to organized directories
+- **HTML Report Generation**: Generate beautiful HTML reports for SEO audits
+- **JSON Export**: Export analysis results in JSON format
+- **File Organization**: Automatic organization of articles, sitemaps, meta tags, and reports
+
 ## Installation
 
 ```bash
@@ -157,6 +163,69 @@ const robotsTxt = sitemapGenerator.generateRobotsTxt(config);
 console.log(robotsTxt);
 ```
 
+### Save Generated Content to Files
+
+All generators support saving content directly to files:
+
+```javascript
+import seoTool from './src/index.js';
+
+const { generators, analyzers } = seoTool;
+
+// Generate and save article
+const articleResult = generators.article.generateAndSave({
+  topic: 'SEO Best Practices',
+  keywords: ['SEO', 'optimization'],
+  targetWordCount: 1500
+});
+
+console.log('Article saved to:', articleResult.saved.filepath);
+
+// Generate and save meta tags
+const metaResult = generators.metaTags.generateAndSaveMetaTags({
+  title: 'My Page Title',
+  description: 'My page description',
+  url: 'https://example.com'
+});
+
+console.log('Meta tags saved to:', metaResult.saved.filepath);
+
+// Generate and save sitemap
+const sitemapResult = generators.sitemap.generateAndSaveSitemap(
+  [
+    { loc: '/', changefreq: 'daily', priority: 1.0 },
+    { loc: '/about', changefreq: 'monthly', priority: 0.8 }
+  ],
+  { baseUrl: 'https://example.com' }
+);
+
+console.log('Sitemap saved to:', sitemapResult.saved.filepath);
+
+// Perform SEO audit and save reports (JSON + HTML)
+const auditResult = analyzers.content.auditAndSave(
+  htmlContent,
+  'SEO',
+  'my-page-audit'
+);
+
+console.log('JSON report:', auditResult.saved.json.filepath);
+console.log('HTML report:', auditResult.saved.html.filepath);
+```
+
+### Output Directory Structure
+
+All generated files are automatically saved to the `output/` directory:
+
+```
+output/
+├── articles/           # Generated SEO-optimized articles
+├── sitemaps/          # XML sitemaps and robots.txt files
+├── meta-tags/         # Meta tags and structured data
+└── reports/           # SEO audit reports (JSON and HTML)
+```
+
+Files are automatically named with timestamps to prevent overwriting.
+
 ## API Reference
 
 ### Article Generator
@@ -178,6 +247,20 @@ Generates an article outline with heading structure.
 
 #### `optimizeArticle(html, keyword)`
 Analyzes existing article and provides optimization suggestions.
+
+#### `saveArticle(article, options)`
+Saves generated article to file.
+
+**Parameters:**
+- `article` (object): Generated article object
+- `options` (object): Save options including `filename`
+
+**Returns:** Object with save result including `filepath` and `size`
+
+#### `generateAndSave(config, saveOptions)`
+Generates and saves article in one step.
+
+**Returns:** Object with `article` and `saved` result
 
 ### Keyword Analyzer
 
@@ -216,6 +299,17 @@ Performs comprehensive SEO audit with scoring.
 
 **Returns:** Object with `overallScore`, `grade`, and detailed analysis
 
+#### `saveReport(report, name)`
+Saves SEO audit report to JSON file.
+
+#### `saveHTMLReport(report, name)`
+Saves SEO audit report as formatted HTML file.
+
+#### `auditAndSave(html, mainKeyword, name)`
+Performs SEO audit and saves both JSON and HTML reports.
+
+**Returns:** Object with `report` and `saved` results (json and html)
+
 ### Meta Tag Generator
 
 #### `generateMetaTags(config)`
@@ -236,6 +330,18 @@ Validates meta description length.
 #### `validateTitle(title)`
 Validates title tag length.
 
+#### `saveMetaTags(metaTags, title)`
+Saves meta tags to HTML file.
+
+#### `saveStructuredData(structuredData, name)`
+Saves structured data to JSON file.
+
+#### `generateAndSaveMetaTags(config, saveOptions)`
+Generates and saves meta tags in one step.
+
+#### `generateAndSaveStructuredData(config, saveOptions)`
+Generates and saves structured data in one step.
+
 ### Sitemap Generator
 
 #### `generateSitemap(urls, options)`
@@ -254,22 +360,38 @@ Generates robots.txt file.
 #### `validateSitemap(urls)`
 Validates sitemap URLs and returns issues/warnings.
 
+#### `saveSitemap(sitemapXml, options)`
+Saves sitemap to XML file.
+
+#### `saveRobotsTxt(robotsTxt)`
+Saves robots.txt to file.
+
+#### `generateAndSaveSitemap(urls, options, saveOptions)`
+Generates and saves sitemap in one step.
+
+#### `generateAndSaveRobotsTxt(config)`
+Generates and saves robots.txt in one step.
+
 ## Examples
 
 Run the examples to see all features in action:
 
 ```bash
+# Basic usage examples
 npm run example
+
+# File saving examples
+node examples/save-files-example.js
 ```
 
 This will demonstrate:
-1. Article generation
+1. Article generation with file saving
 2. Keyword analysis
-3. Meta tag generation
-4. Structured data creation
-5. SEO audit
-6. Sitemap generation
-7. robots.txt generation
+3. Meta tag generation and saving
+4. Structured data creation and export
+5. SEO audit with HTML/JSON reports
+6. Sitemap generation and saving
+7. robots.txt generation and saving
 8. Readability analysis
 9. Content optimization
 
@@ -308,9 +430,17 @@ seo-tool/
 │   ├── analyzers/
 │   │   ├── keywordAnalyzer.js     # Keyword analysis
 │   │   └── contentAnalyzer.js     # Content & SEO analysis
+│   ├── utils/
+│   │   └── fileManager.js         # File operations & saving
 │   └── index.js                   # Main entry point
 ├── examples/
-│   └── usage.js                   # Usage examples
+│   ├── usage.js                   # Basic usage examples
+│   └── save-files-example.js      # File saving examples
+├── output/                        # Generated files (auto-created)
+│   ├── articles/                  # Saved articles
+│   ├── sitemaps/                  # Saved sitemaps
+│   ├── meta-tags/                 # Saved meta tags
+│   └── reports/                   # SEO audit reports
 ├── package.json
 └── README.md
 ```

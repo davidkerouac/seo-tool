@@ -2,6 +2,8 @@
  * Sitemap Generator - Generates XML sitemaps for SEO
  */
 
+import fileManager from '../utils/fileManager.js';
+
 export class SitemapGenerator {
   /**
    * Generate XML sitemap
@@ -254,6 +256,58 @@ export class SitemapGenerator {
         lastmod: new Date()
       }
     ];
+  }
+
+  /**
+   * Save sitemap to file
+   * @param {string} sitemapXml - Sitemap XML content
+   * @param {object} options - Save options
+   * @returns {object} Save result
+   */
+  saveSitemap(sitemapXml, options = {}) {
+    const { filename = 'sitemap' } = options;
+    return fileManager.saveSitemap(sitemapXml, filename);
+  }
+
+  /**
+   * Save robots.txt to file
+   * @param {string} robotsTxt - Robots.txt content
+   * @returns {object} Save result
+   */
+  saveRobotsTxt(robotsTxt) {
+    return fileManager.saveRobotsTxt(robotsTxt);
+  }
+
+  /**
+   * Generate and save sitemap in one step
+   * @param {array} urls - Array of URL objects
+   * @param {object} options - Sitemap options
+   * @param {object} saveOptions - Save options
+   * @returns {object} Generated sitemap and save result
+   */
+  generateAndSaveSitemap(urls, options = {}, saveOptions = {}) {
+    const sitemap = this.generateSitemap(urls, options);
+    const saveResult = this.saveSitemap(sitemap, saveOptions);
+
+    return {
+      sitemap,
+      saved: saveResult
+    };
+  }
+
+  /**
+   * Generate and save robots.txt in one step
+   * @param {object} config - Robots.txt configuration
+   * @returns {object} Generated robots.txt and save result
+   */
+  generateAndSaveRobotsTxt(config) {
+    const robotsTxt = this.generateRobotsTxt(config);
+    const saveResult = this.saveRobotsTxt(robotsTxt);
+
+    return {
+      robotsTxt,
+      saved: saveResult
+    };
   }
 }
 

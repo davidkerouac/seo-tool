@@ -2,6 +2,8 @@
  * Content Analyzer - Analyzes content structure and SEO elements
  */
 
+import fileManager from '../utils/fileManager.js';
+
 export class ContentAnalyzer {
   /**
    * Analyze content readability
@@ -253,6 +255,273 @@ export class ContentAnalyzer {
     if (score >= 70) return 'C';
     if (score >= 60) return 'D';
     return 'F';
+  }
+
+  /**
+   * Save SEO audit report to file (JSON format)
+   * @param {object} report - Audit report object
+   * @param {string} name - Report name
+   * @returns {object} Save result
+   */
+  saveReport(report, name = 'seo-audit') {
+    return fileManager.saveReport(report, name);
+  }
+
+  /**
+   * Generate HTML report from audit results
+   * @param {object} report - Audit report object
+   * @returns {string} HTML report
+   */
+  generateHTMLReport(report) {
+    const { overallScore, grade, metaAnalysis, structureAnalysis, readabilityAnalysis, allRecommendations } = report;
+
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Audit Report</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .score-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      border: 5px solid white;
+    }
+    .score-text { font-size: 3em; font-weight: bold; }
+    .grade { font-size: 1.2em; opacity: 0.9; }
+    .content { padding: 40px; }
+    .section {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #eee;
+    }
+    .section:last-child { border-bottom: none; }
+    .section h2 {
+      color: #667eea;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+    .metric {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+      background: #f9f9f9;
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+    .metric-label { font-weight: 500; }
+    .metric-value { color: #667eea; font-weight: 600; }
+    .recommendations {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin-top: 15px;
+    }
+    .recommendations h3 {
+      color: #856404;
+      margin-bottom: 10px;
+    }
+    .recommendations ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .recommendations li {
+      padding: 5px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    .recommendations li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #ffc107;
+    }
+    .status-good { color: #28a745; }
+    .status-warning { color: #ffc107; }
+    .status-error { color: #dc3545; }
+    .timestamp {
+      text-align: center;
+      color: #999;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>SEO Audit Report</h1>
+      <div class="score-circle">
+        <div>
+          <div class="score-text">${overallScore}</div>
+          <div class="grade">Grade: ${grade}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Meta Tags Analysis -->
+      <div class="section">
+        <h2>Meta Tags Analysis</h2>
+        <div class="metric">
+          <span class="metric-label">Title Tag</span>
+          <span class="metric-value ${metaAnalysis.title.optimal ? 'status-good' : 'status-warning'}">
+            ${metaAnalysis.title.content || 'Missing'}
+          </span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Title Length</span>
+          <span class="metric-value">${metaAnalysis.title.length} characters</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Meta Description</span>
+          <span class="metric-value ${metaAnalysis.description.optimal ? 'status-good' : 'status-warning'}">
+            ${metaAnalysis.description.content ? 'Present' : 'Missing'}
+          </span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Description Length</span>
+          <span class="metric-value">${metaAnalysis.description.length} characters</span>
+        </div>
+      </div>
+
+      <!-- Structure Analysis -->
+      <div class="section">
+        <h2>Content Structure</h2>
+        <div class="metric">
+          <span class="metric-label">H1 Headings</span>
+          <span class="metric-value ${structureAnalysis.headings.h1 === 1 ? 'status-good' : 'status-warning'}">
+            ${structureAnalysis.headings.h1}
+          </span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">H2 Headings</span>
+          <span class="metric-value">${structureAnalysis.headings.h2}</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">H3 Headings</span>
+          <span class="metric-value">${structureAnalysis.headings.h3}</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Paragraphs</span>
+          <span class="metric-value">${structureAnalysis.paragraphs}</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Images</span>
+          <span class="metric-value">${structureAnalysis.images}</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Links</span>
+          <span class="metric-value">${structureAnalysis.links}</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Structure Score</span>
+          <span class="metric-value">${structureAnalysis.score}/100</span>
+        </div>
+      </div>
+
+      <!-- Readability Analysis -->
+      <div class="section">
+        <h2>Readability Analysis</h2>
+        <div class="metric">
+          <span class="metric-label">Total Words</span>
+          <span class="metric-value">${readabilityAnalysis.totalWords}</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Total Sentences</span>
+          <span class="metric-value">${readabilityAnalysis.totalSentences}</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Avg Sentence Length</span>
+          <span class="metric-value">${readabilityAnalysis.avgSentenceLength} words</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Readability Level</span>
+          <span class="metric-value">${readabilityAnalysis.readabilityLevel}</span>
+        </div>
+      </div>
+
+      <!-- Recommendations -->
+      ${allRecommendations.length > 0 ? `
+      <div class="section">
+        <h2>Recommendations</h2>
+        <div class="recommendations">
+          <h3>Suggested Improvements</h3>
+          <ul>
+            ${allRecommendations.map(rec => `<li>${rec}</li>`).join('')}
+          </ul>
+        </div>
+      </div>
+      ` : ''}
+    </div>
+
+    <div class="timestamp">
+      Report generated on ${new Date().toLocaleString()}
+    </div>
+  </div>
+</body>
+</html>`;
+  }
+
+  /**
+   * Save SEO audit report as HTML
+   * @param {object} report - Audit report object
+   * @param {string} name - Report name
+   * @returns {object} Save result
+   */
+  saveHTMLReport(report, name = 'seo-audit') {
+    const html = this.generateHTMLReport(report);
+    return fileManager.saveReportHTML(html, name);
+  }
+
+  /**
+   * Perform SEO audit and save reports (both JSON and HTML)
+   * @param {string} html - HTML content
+   * @param {string} mainKeyword - Primary keyword
+   * @param {string} name - Report name
+   * @returns {object} Audit results and save results
+   */
+  auditAndSave(html, mainKeyword = '', name = 'seo-audit') {
+    const report = this.performSEOAudit(html, mainKeyword);
+    const jsonSave = this.saveReport(report, name);
+    const htmlSave = this.saveHTMLReport(report, name);
+
+    return {
+      report,
+      saved: {
+        json: jsonSave,
+        html: htmlSave
+      }
+    };
   }
 }
 

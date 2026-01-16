@@ -2,6 +2,8 @@
  * Article Generator - Generates SEO-optimized articles
  */
 
+import fileManager from '../utils/fileManager.js';
+
 export class ArticleGenerator {
   /**
    * Generate article outline based on topic and keywords
@@ -302,6 +304,43 @@ export class ArticleGenerator {
         const priority = { high: 3, medium: 2, low: 1 };
         return priority[b.priority] - priority[a.priority];
       })
+    };
+  }
+
+  /**
+   * Save article to file
+   * @param {object} article - Generated article object
+   * @param {object} options - Save options
+   * @returns {object} Save result
+   */
+  saveArticle(article, options = {}) {
+    const { filename } = options;
+    const title = filename || article.outline.title;
+
+    const result = fileManager.saveArticle(article.html, title);
+
+    return {
+      ...result,
+      article: {
+        title: article.outline.title,
+        metadata: article.metadata
+      }
+    };
+  }
+
+  /**
+   * Generate and save article in one step
+   * @param {object} config - Article configuration
+   * @param {object} saveOptions - Save options
+   * @returns {object} Generated article and save result
+   */
+  generateAndSave(config, saveOptions = {}) {
+    const article = this.generateArticle(config);
+    const saveResult = this.saveArticle(article, saveOptions);
+
+    return {
+      article,
+      saved: saveResult
     };
   }
 }

@@ -39,3 +39,6 @@ coverage/
 generated-article.html
 sitemap.xml
 robots.txt
+
+# Output directory (generated SEO content)
+output/

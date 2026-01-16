@@ -2,6 +2,8 @@
  * Meta Tag Generator - Generates SEO meta tags
  */
 
+import fileManager from '../utils/fileManager.js';
+
 export class MetaTagGenerator {
   /**
    * Generate complete meta tags for a page
@@ -275,6 +277,64 @@ export class MetaTagGenerator {
         description: description.length > 160 ? description.substring(0, 157) + '...' : description,
         url: url || ''
       }
+    };
+  }
+
+  /**
+   * Save meta tags to file
+   * @param {string} metaTags - Meta tags HTML
+   * @param {string} title - Page title for filename
+   * @returns {object} Save result
+   */
+  saveMetaTags(metaTags, title = 'meta-tags') {
+    return fileManager.saveMetaTags(metaTags, title);
+  }
+
+  /**
+   * Save structured data to file
+   * @param {string} structuredData - JSON-LD content
+   * @param {string} name - File name
+   * @returns {object} Save result
+   */
+  saveStructuredData(structuredData, name = 'structured-data') {
+    // Extract JSON from script tag
+    const jsonMatch = structuredData.match(/<script[^>]*>([\s\S]*?)<\/script>/);
+    const jsonContent = jsonMatch ? jsonMatch[1].trim() : structuredData;
+
+    return fileManager.saveStructuredData(jsonContent, name);
+  }
+
+  /**
+   * Generate and save meta tags in one step
+   * @param {object} config - Page configuration
+   * @param {object} saveOptions - Save options
+   * @returns {object} Generated meta tags and save result
+   */
+  generateAndSaveMetaTags(config, saveOptions = {}) {
+    const metaTags = this.generateMetaTags(config);
+    const { filename = config.title } = saveOptions;
+    const saveResult = this.saveMetaTags(metaTags, filename);
+
+    return {
+      metaTags,
+      saved: saveResult
+    };
+  }
+
+  /**
+   * Generate and save structured data in one step
+   * @param {object} config - Content configuration
+   * @param {object} saveOptions - Save options
+   * @returns {object} Generated structured data and save result
+   */
+  generateAndSaveStructuredData(config, saveOptions = {}) {
+    const structuredData = this.generateStructuredData(config);
+    const { filename = config.headline || 'structured-data' } = saveOptions;
+    const saveResult = this.saveStructuredData(structuredData, filename);
+
+    return {
+      structuredData,
+      saved: saveResult
     };
   }
 }
