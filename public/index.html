@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO 工具 - 在线内容生成和优化</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .tool-card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+
+    .tool-card h2 {
+      color: #667eea;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    .tool-card p {
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+
+    .form-group textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .result-box {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 8px;
+      display: none;
+    }
+
+    .result-box.success {
+      background: #e8f5e9;
+      border-left: 4px solid #4caf50;
+    }
+
+    .result-box.error {
+      background: #ffebee;
+      border-left: 4px solid #f44336;
+    }
+
+    .result-box h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .result-box pre {
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 13px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .loading {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .loading.active {
+      display: block;
+    }
+
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #667eea;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .stats {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .stat-item {
+      flex: 1;
+      padding: 10px;
+      background: white;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .stat-item .label {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .stat-item .value {
+      font-size: 18px;
+      font-weight: bold;
+      color: #667eea;
+    }
+
+    .small-text {
+      font-size: 12px;
+      color: #999;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🚀 SEO 工具箱</h1>
+      <p>在线生成和优化 SEO 内容</p>
+    </div>
+
+    <div class="tools-grid">
+      <!-- 工具1: 文章生成器 -->
+      <div class="tool-card">
+        <h2>📝 文章生成器</h2>
+        <p>生成 SEO 优化的文章大纲和 HTML 内容</p>
+
+        <div class="form-group">
+          <label>文章主题</label>
+          <input type="text" id="article-topic" placeholder="例如：人工智能的未来发展">
+        </div>
+
+        <div class="form-group">
+          <label>关键词（用逗号分隔）</label>
+          <input type="text" id="article-keywords" placeholder="例如：AI, 机器学习, 深度学习">
+        </div>
+
+        <div class="form-group">
+          <label>目标字数</label>
+          <input type="number" id="article-words" value="1500">
+        </div>
+
+        <div class="form-group">
+          <label>章节数量</label>
+          <input type="number" id="article-sections" value="5">
+        </div>
+
+        <button class="btn" onclick="generateArticle()">生成文章</button>
+
+        <div class="loading" id="article-loading">
+          <div class="spinner"></div>
+          <p>正在生成...</p>
+        </div>
+
+        <div class="result-box" id="article-result"></div>
+      </div>
+
+      <!-- 工具2: Meta 标签生成器 -->
+      <div class="tool-card">
+        <h2>🏷️ Meta 标签生成器</h2>
+        <p>生成完整的 SEO meta 标签</p>
+
+        <div class="form-group">
+          <label>页面标题</label>
+          <input type="text" id="meta-title" placeholder="例如：最佳编程学习指南">
+        </div>
+
+        <div class="form-group">
+          <label>页面描述</label>
+          <textarea id="meta-description" placeholder="例如：完整的编程学习指南，包含实用技巧和最佳实践"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>关键词（用逗号分隔）</label>
+          <input type="text" id="meta-keywords" placeholder="例如：编程, 学习, 教程">
+        </div>
+
+        <div class="form-group">
+          <label>网站 URL</label>
+          <input type="text" id="meta-url" placeholder="https://example.com">
+        </div>
+
+        <button class="btn" onclick="generateMetaTags()">生成 Meta 标签</button>
+
+        <div class="loading" id="meta-loading">
+          <div class="spinner"></div>
+          <p>正在生成...</p>
+        </div>
+
+        <div class="result-box" id="meta-result"></div>
+      </div>
+
+      <!-- 工具3: SEO 审计 -->
+      <div class="tool-card">
+        <h2>🔍 SEO 审计</h2>
+        <p>分析网页 SEO 并生成详细报告</p>
+
+        <div class="form-group">
+          <label>HTML 内容</label>
+          <textarea id="audit-html" placeholder="粘贴你的 HTML 代码..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>主要关键词</label>
+          <input type="text" id="audit-keyword" placeholder="例如：编程">
+        </div>
+
+        <button class="btn" onclick="performAudit()">执行审计</button>
+
+        <div class="loading" id="audit-loading">
+          <div class="spinner"></div>
+          <p>正在分析...</p>
+        </div>
+
+        <div class="result-box" id="audit-result"></div>
+      </div>
+
+      <!-- 工具4: 关键词分析 -->
+      <div class="tool-card">
+        <h2>🎯 关键词分析</h2>
+        <p>分析文本中的关键词密度和频率</p>
+
+        <div class="form-group">
+          <label>文本内容</label>
+          <textarea id="keyword-text" placeholder="粘贴要分析的文本内容..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>目标关键词</label>
+          <input type="text" id="keyword-target" placeholder="例如：编程">
+        </div>
+
+        <button class="btn" onclick="analyzeKeywords()">分析关键词</button>
+
+        <div class="loading" id="keyword-loading">
+          <div class="spinner"></div>
+          <p>正在分析...</p>
+        </div>
+
+        <div class="result-box" id="keyword-result"></div>
+      </div>
+
+      <!-- 工具5: 站点地图生成器 -->
+      <div class="tool-card">
+        <h2>🗺️ 站点地图生成器</h2>
+        <p>生成 XML 格式的站点地图</p>
+
+        <div class="form-group">
+          <label>网站域名</label>
+          <input type="text" id="sitemap-baseurl" value="https://example.com">
+        </div>
+
+        <div class="form-group">
+          <label>页面路径（每行一个）</label>
+          <textarea id="sitemap-urls" placeholder="例如：&#10;/&#10;/about&#10;/blog"></textarea>
+        </div>
+
+        <button class="btn" onclick="generateSitemap()">生成站点地图</button>
+
+        <div class="loading" id="sitemap-loading">
+          <div class="spinner"></div>
+          <p>正在生成...</p>
+        </div>
+
+        <div class="result-box" id="sitemap-result"></div>
+      </div>
+    </div>
+
+    <div style="text-align: center; color: white; margin-top: 40px;">
+      <p>© 2026 SEO Tool | 所有文件保存在服务器的 output/ 目录</p>
+      <p class="small-text" style="color: rgba(255,255,255,0.8);">提示：生成的文件保存在服务器端，可以在 output/ 目录中查看</p>
+    </div>
+  </div>
+
+  <script>
+    // 文章生成
+    async function generateArticle() {
+      const topic = document.getElementById('article-topic').value;
+      const keywordsStr = document.getElementById('article-keywords').value;
+      const targetWordCount = document.getElementById('article-words').value;
+      const sections = document.getElementById('article-sections').value;
+
+      if (!topic) {
+        alert('请输入文章主题');
+        return;
+      }
+
+      const keywords = keywordsStr.split(',').map(k => k.trim()).filter(k => k);
+
+      showLoading('article-loading');
+      hideResult('article-result');
+
+      try {
+        const response = await fetch('/api/generate-article', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ topic, keywords, targetWordCount, sections })
+        });
+
+        const result = await response.json();
+        hideLoading('article-loading');
+
+        if (result.success) {
+          showResult('article-result', 'success', `
+            <h3>✅ 文章生成成功！</h3>
+            <div class="stats">
+              <div class="stat-item">
+                <div class="label">文件大小</div>
+                <div class="value">${(result.data.size / 1024).toFixed(2)} KB</div>
+              </div>
+            </div>
+            <p><strong>标题:</strong> ${result.data.title}</p>
+            <p><strong>保存路径:</strong> <code>${result.data.filepath}</code></p>
+            <p class="small-text">HTML 内容已保存到服务器，可以在文件系统中查看</p>
+          `);
+        } else {
+          showResult('article-result', 'error', `<h3>❌ 错误</h3><p>${result.error}</p>`);
+        }
+      } catch (error) {
+        hideLoading('article-loading');
+        showResult('article-result', 'error', `<h3>❌ 请求失败</h3><p>${error.message}</p>`);
+      }
+    }
+
+    // Meta 标签生成
+    async function generateMetaTags() {
+      const title = document.getElementById('meta-title').value;
+      const description = document.getElementById('meta-description').value;
+      const keywordsStr = document.getElementById('meta-keywords').value;
+      const url = document.getElementById('meta-url').value;
+
+      if (!title) {
+        alert('请输入页面标题');
+        return;
+      }
+
+      const keywords = keywordsStr.split(',').map(k => k.trim()).filter(k => k);
+
+      showLoading('meta-loading');
+      hideResult('meta-result');
+
+      try {
+        const response = await fetch('/api/generate-meta-tags', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ title, description, keywords, url })
+        });
+
+        const result = await response.json();
+        hideLoading('meta-loading');
+
+        if (result.success) {
+          showResult('meta-result', 'success', `
+            <h3>✅ Meta 标签生成成功！</h3>
+            <p><strong>保存路径:</strong> <code>${result.data.filepath}</code></p>
+            <pre>${escapeHtml(result.data.metaTags)}</pre>
+          `);
+        } else {
+          showResult('meta-result', 'error', `<h3>❌ 错误</h3><p>${result.error}</p>`);
+        }
+      } catch (error) {
+        hideLoading('meta-loading');
+        showResult('meta-result', 'error', `<h3>❌ 请求失败</h3><p>${error.message}</p>`);
+      }
+    }
+
+    // SEO 审计
+    async function performAudit() {
+      const html = document.getElementById('audit-html').value;
+      const keyword = document.getElementById('audit-keyword').value;
+
+      if (!html) {
+        alert('请输入 HTML 内容');
+        return;
+      }
+
+      showLoading('audit-loading');
+      hideResult('audit-result');
+
+      try {
+        const response = await fetch('/api/seo-audit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ html, keyword, name: 'web-audit' })
+        });
+
+        const result = await response.json();
+        hideLoading('audit-loading');
+
+        if (result.success) {
+          showResult('audit-result', 'success', `
+            <h3>✅ SEO 审计完成！</h3>
+            <div class="stats">
+              <div class="stat-item">
+                <div class="label">评分</div>
+                <div class="value">${result.data.score}/100</div>
+              </div>
+              <div class="stat-item">
+                <div class="label">等级</div>
+                <div class="value">${result.data.grade}</div>
+              </div>
+            </div>
+            <p><strong>HTML 报告:</strong> <code>${result.data.htmlPath}</code></p>
+            <p><strong>JSON 报告:</strong> <code>${result.data.jsonPath}</code></p>
+            <h4>建议改进:</h4>
+            <ul>
+              ${result.data.recommendations.slice(0, 5).map(r => `<li>${r}</li>`).join('')}
+            </ul>
+          `);
+        } else {
+          showResult('audit-result', 'error', `<h3>❌ 错误</h3><p>${result.error}</p>`);
+        }
+      } catch (error) {
+        hideLoading('audit-loading');
+        showResult('audit-result', 'error', `<h3>❌ 请求失败</h3><p>${error.message}</p>`);
+      }
+    }
+
+    // 关键词分析
+    async function analyzeKeywords() {
+      const text = document.getElementById('keyword-text').value;
+      const keyword = document.getElementById('keyword-target').value;
+
+      if (!text || !keyword) {
+        alert('请输入文本内容和目标关键词');
+        return;
+      }
+
+      showLoading('keyword-loading');
+      hideResult('keyword-result');
+
+      try {
+        const response = await fetch('/api/analyze-keywords', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text, keyword })
+        });
+
+        const result = await response.json();
+        hideLoading('keyword-loading');
+
+        if (result.success) {
+          const density = result.data.density;
+          showResult('keyword-result', 'success', `
+            <h3>✅ 关键词分析完成！</h3>
+            <div class="stats">
+              <div class="stat-item">
+                <div class="label">密度</div>
+                <div class="value">${density.density}%</div>
+              </div>
+              <div class="stat-item">
+                <div class="label">出现次数</div>
+                <div class="value">${density.keywordCount}</div>
+              </div>
+              <div class="stat-item">
+                <div class="label">总词数</div>
+                <div class="value">${density.totalWords}</div>
+              </div>
+            </div>
+            <p><strong>建议:</strong> ${density.recommendation}</p>
+            <h4>高频词汇 Top 5:</h4>
+            <ul>
+              ${result.data.topKeywords.slice(0, 5).map(k =>
+                `<li>${k.word}: ${k.count}次 (${k.frequency})</li>`
+              ).join('')}
+            </ul>
+          `);
+        } else {
+          showResult('keyword-result', 'error', `<h3>❌ 错误</h3><p>${result.error}</p>`);
+        }
+      } catch (error) {
+        hideLoading('keyword-loading');
+        showResult('keyword-result', 'error', `<h3>❌ 请求失败</h3><p>${error.message}</p>`);
+      }
+    }
+
+    // 站点地图生成
+    async function generateSitemap() {
+      const baseUrl = document.getElementById('sitemap-baseurl').value;
+      const urlsStr = document.getElementById('sitemap-urls').value;
+
+      if (!baseUrl || !urlsStr) {
+        alert('请输入网站域名和页面路径');
+        return;
+      }
+
+      const urlPaths = urlsStr.split('\n').map(u => u.trim()).filter(u => u);
+      const urls = urlPaths.map(loc => ({
+        loc,
+        changefreq: 'weekly',
+        priority: loc === '/' ? 1.0 : 0.8
+      }));
+
+      showLoading('sitemap-loading');
+      hideResult('sitemap-result');
+
+      try {
+        const response = await fetch('/api/generate-sitemap', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ urls, baseUrl })
+        });
+
+        const result = await response.json();
+        hideLoading('sitemap-loading');
+
+        if (result.success) {
+          showResult('sitemap-result', 'success', `
+            <h3>✅ 站点地图生成成功！</h3>
+            <p><strong>保存路径:</strong> <code>${result.data.filepath}</code></p>
+            <pre>${escapeHtml(result.data.sitemap.substring(0, 500))}...</pre>
+          `);
+        } else {
+          showResult('sitemap-result', 'error', `<h3>❌ 错误</h3><p>${result.error}</p>`);
+        }
+      } catch (error) {
+        hideLoading('sitemap-loading');
+        showResult('sitemap-result', 'error', `<h3>❌ 请求失败</h3><p>${error.message}</p>`);
+      }
+    }
+
+    // 辅助函数
+    function showLoading(id) {
+      document.getElementById(id).classList.add('active');
+    }
+
+    function hideLoading(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+
+    function showResult(id, type, html) {
+      const el = document.getElementById(id);
+      el.className = 'result-box ' + type;
+      el.innerHTML = html;
+      el.style.display = 'block';
+    }
+
+    function hideResult(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+  </script>
+</body>
+</html>
