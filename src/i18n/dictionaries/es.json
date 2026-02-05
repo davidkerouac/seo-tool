@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "title": "Codot - Planificador Diario IA & App de Notas de Voz | Lista de Tareas & Gestión",
+    "description": "Codot es tu asistente personal impulsado por IA para planificación diaria, notas de voz y gestión de tareas. Perfecto para usuarios con TDAH con función brain dump, recordatorios inteligentes, seguimiento de hábitos y widget de calendario."
+  },
+  "nav": {
+    "features": "Funciones",
+    "pricing": "Precios",
+    "blog": "Blog",
+    "about": "Nosotros",
+    "faq": "FAQ",
+    "downloadApp": "Descargar App"
+  },
+  "hero": {
+    "badge": "Codot Online",
+    "title1": "Planificador IA &",
+    "title2": "Notas de Voz",
+    "description": "Tu asistente personal para gestión de tareas, diario de voz, brain dump y recordatorios inteligentes. La app definitiva de lista de tareas para TDAH y profesionales ocupados.",
+    "visitWeb": "Visitar Web",
+    "downloadNow": "Descargar Ahora"
+  },
+  "features": {
+    "title": "App de Productividad",
+    "titleHighlight": "Funciones",
+    "subtitle": "Notas de voz, planificador diario, gestor de tareas, seguimiento de hábitos y recordatorios inteligentes - todo impulsado por IA.",
+    "items": [
+      {"title": "Notas de Voz & Diario de Voz", "desc": "Graba memos de voz, crea entradas de diario de voz y captura brain dumps manos libres con transcripción IA."},
+      {"title": "Priorización de Tareas IA", "desc": "Lista de tareas inteligente que prioriza automáticamente tu checklist según plazos e importancia - perfecto para TDAH."},
+      {"title": "Planificador Diario & Semanal", "desc": "Calendario IA con planificador sincronizado con Google Calendar. Planifica tu día sin esfuerzo."},
+      {"title": "App de Recordatorios Inteligentes", "desc": "Recordatorios adaptativos que aprenden de tus hábitos. Nunca pierdas tareas importantes con notificaciones inteligentes."},
+      {"title": "Seguimiento de Hábitos", "desc": "Construye mejores rutinas con seguimiento de hábitos. Monitorea hábitos diarios y alcanza tus metas consistentemente."},
+      {"title": "App de Enfoque para TDAH", "desc": "Diseñado para mentes neurodivergentes. La función brain dump ayuda a limpiar el desorden mental y mantener el enfoque."},
+      {"title": "Toma de Notas & Notas de Reunión", "desc": "Captura notas de reunión por voz y organiza con IA. Construye fácilmente tu base de conocimiento personal."},
+      {"title": "Gestión de Contactos & CRM Personal", "desc": "Gestiona tu red como una libreta de direcciones. Rastrea relaciones y nunca olvides contactos importantes."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Cómo",
+    "titleHighlight": "funciona Codot",
+    "steps": [
+      {"title": "Habla o chatea", "desc": "Comunícate con Codot por voz o texto, como hablar con un amigo."},
+      {"title": "Codot entiende", "desc": "La IA comprende contexto, urgencia y tus patrones personales."},
+      {"title": "Tareas organizadas", "desc": "Tus compromisos se organizan y priorizan automáticamente."},
+      {"title": "Mantente en camino", "desc": "Recibe recordatorios y actualizaciones oportunas adaptadas a tus preferencias."}
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen",
+    "titleHighlight": "los usuarios",
+    "items": [
+      {"quote": "Codot ha transformado completamente cómo gestiono mi agenda ocupada. La interacción por voz es tan natural, es como tener un asistente personal a mi lado.", "author": "Emma J.", "title": "Ejecutiva de Marketing"},
+      {"quote": "Como alguien que lucha con la organización, Codot ha sido revolucionario. De alguna manera sabe exactamente cómo priorizar mis tareas mejor que yo.", "author": "Michael T.", "title": "Ingeniero de Software"},
+      {"quote": "Los recordatorios adaptativos hacen especial a Codot. Realmente aprende cuándo es más probable que complete ciertos tipos de tareas y me recuerda en consecuencia.", "author": "Sarah L.", "title": "Diseñadora Freelance"}
+    ]
+  },
+  "useCases": {
+    "title": "Mejor App de Productividad",
+    "titleHighlight": "para todos",
+    "subtitle": "Ya necesites un planificador TDAH, asistente personal o gestor de tareas - Codot se adapta a tu estilo de vida.",
+    "items": [
+      {"title": "Planificador TDAH & App de Enfoque", "desc": "La mejor app de productividad para TDAH. Vacía tus pensamientos, divide tareas en pasos manejables y usa el diario de voz para capturar ideas sin agobiarte."},
+      {"title": "Asistente Personal para Ejecutivos", "desc": "Tu asistente virtual para gestión del tiempo. Gestor de tareas con notas de reunión, planificador y recordatorios inteligentes."},
+      {"title": "Estudiantes & Organización de Vida", "desc": "App todo en uno con checklist, planificador diario y seguimiento de hábitos. Gestiona tareas, captura notas de voz en clases."}
+    ]
+  },
+  "comparison": {
+    "title": "Por qué elegir",
+    "titleHighlight": "Codot",
+    "feature": "Función",
+    "features": ["Interacción voz primero", "IA consciente del contexto", "Auto-priorización", "Programación inteligente", "Base de conocimiento", "Aprendizaje de rutina diaria"]
+  },
+  "faq": {
+    "title": "Preguntas",
+    "titleHighlight": "frecuentes",
+    "items": [
+      {"q": "¿Es Codot un planificador gratuito y app de lista de tareas?", "a": "Sí, Codot ofrece un nivel gratuito generoso que incluye gestión de tareas, notas de voz, planificador diario y funciones IA. También tenemos un plan Pro para usuarios avanzados."},
+      {"q": "¿Es Codot bueno para TDAH y brain dump?", "a": "¡Absolutamente! Codot es el mejor planificador TDAH con función brain dump. Nuestra IA descompone tareas abrumadoras en pasos manejables."},
+      {"q": "¿Cómo funcionan las notas de voz y el diario de voz?", "a": "Simplemente habla para capturar tareas, notas o entradas de diario. Nuestra IA transcribe tus memos de voz y los organiza automáticamente."},
+      {"q": "¿Se sincroniza el planificador con Google Calendar?", "a": "¡Sí! Codot se integra perfectamente con Google Calendar, Apple Calendar y Outlook."},
+      {"q": "¿Qué hace diferente a Codot de otras apps de gestión de tareas?", "a": "Codot combina notas de voz, priorización IA, seguimiento de hábitos, CRM personal y recordatorios inteligentes en una sola app."},
+      {"q": "¿Funciona la app de recordatorios sin conexión?", "a": "Sí, puedes ver y gestionar tu checklist sin conexión. Los cambios se sincronizan automáticamente al conectarte."}
+    ]
+  },
+  "cta": {
+    "title1": "Tu asistente",
+    "title2": "personal IA gratuito",
+    "titleHighlight": "te espera",
+    "description": "Descarga el mejor planificador diario, notas de voz y app de gestión de tareas. ¡Comienza a organizar tu vida con IA hoy - es gratis!",
+    "downloadButton": "Descargar en App Store"
+  },
+  "footer": {
+    "tagline": "Tu asistente personal impulsado por IA para planificación diaria, notas de voz y gestión de tareas.",
+    "product": "Producto",
+    "resources": "Recursos",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "copyright": "Todos los derechos reservados."
+  }
+}

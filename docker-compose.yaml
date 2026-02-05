@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: codot-landpage
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    # 如果你需要挂载 env 文件，取消下面的注释
+    # env_file:
+    #   - .env.local
+

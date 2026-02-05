@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "title": "Codot - AI Päiväsuunnittelija & Äänimuistiinpanot | Tehtävälista & Tehtävienhallinta",
+    "description": "Codot on tekoälypohjainen henkilökohtainen avustajasi päivittäiseen suunnitteluun, äänimuistiinpanoihin ja tehtävienhallintaan. Täydellinen ADHD-käyttäjille brain dump -toiminnolla, älykkäillä muistutuksilla, tapahtumanseurannalla ja kalenteriwidgetillä."
+  },
+  "nav": {"features": "Ominaisuudet", "pricing": "Hinnat", "blog": "Blogi", "about": "Meistä", "faq": "UKK", "downloadApp": "Lataa sovellus"},
+  "hero": {
+    "badge": "Codot Online",
+    "title1": "AI Päiväsuunnittelija &",
+    "title2": "Äänimuistiinpanot",
+    "description": "Henkilökohtainen avustajasi tehtävienhallintaan, äänipäiväkirjaan, brain dumpiin ja älykkäisiin muistutuksiin. Paras tehtävälistasovellus ADHD:lle ja kiireisille ammattilaisille.",
+    "visitWeb": "Käy verkossa",
+    "downloadNow": "Lataa nyt"
+  },
+  "features": {
+    "title": "Tuottavuussovellus",
+    "titleHighlight": "Ominaisuudet",
+    "subtitle": "Äänimuistiinpanot, päiväsuunnittelija, tehtävienhallinta, tapahtumaseuranta ja älykkäät muistutukset - kaikki tekoälyn avulla.",
+    "items": [
+      {"title": "Äänimuistiinpanot & Äänipäiväkirja", "desc": "Tallenna äänimuistioita, luo äänipäiväkirjamerkintöjä ja kaappaa brain dumpit hands-free tekoälyn litteroinnilla."},
+      {"title": "Tekoäly Tehtävien Priorisointi", "desc": "Älykäs tehtävälista, joka priorisoi tarkistuslistasi automaattisesti määräaikojen ja tärkeyden mukaan - täydellinen ADHD:lle."},
+      {"title": "Päivä- & Viikkosuunnittelija", "desc": "Tekoälykalenteri suunnittelijalla, joka synkronoituu Google Kalenterin kanssa. Suunnittele päiväsi vaivattomasti."},
+      {"title": "Älykkäät Muistutukset", "desc": "Mukautuvat muistutukset, jotka oppivat tavoistasi. Älä koskaan missaa tärkeitä tehtäviä."},
+      {"title": "Tapahtumaseuranta", "desc": "Rakenna parempia rutiineja tapahtumaseurannalla. Seuraa päivittäisiä tapoja ja saavuta tavoitteesi johdonmukaisesti."},
+      {"title": "Keskittymissovellus ADHD:lle", "desc": "Suunniteltu neurodivergenteille mielille. Brain dump -toiminto auttaa puhdistamaan henkisen sotkun ja pysymään keskittyneenä."},
+      {"title": "Muistiinpanot & Kokousmuistiinpanot", "desc": "Kaappaa kokousmuistiinpanot äänellä ja järjestä tekoälyllä. Rakenna helposti henkilökohtainen tietokantasi."},
+      {"title": "Yhteystietohallinta & Henkilökohtainen CRM", "desc": "Hallitse verkostoasi kuin osoitekirjaa. Seuraa suhteita äläkä koskaan unohda tärkeitä yhteystietoja."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Miten Codot",
+    "titleHighlight": "toimii",
+    "steps": [
+      {"title": "Puhu tai chattaa", "desc": "Kommunikoi Codotin kanssa äänellä tai tekstillä, aivan kuin puhuisit ystävän kanssa."},
+      {"title": "Codot ymmärtää", "desc": "Tekoäly ymmärtää kontekstin, kiireellisyyden ja henkilökohtaiset kaavasi."},
+      {"title": "Tehtävät järjestetty", "desc": "Sitoumuksesi järjestetään ja priorisoidaan automaattisesti."},
+      {"title": "Pysy raiteilla", "desc": "Saat ajoissa muistutuksia ja päivityksiä mieltymyksiesi mukaan."}
+    ]
+  },
+  "testimonials": {
+    "title": "Mitä käyttäjät",
+    "titleHighlight": "sanovat",
+    "items": [
+      {"quote": "Codot on täysin muuttanut tapani hallita kiireistä aikatauluani. Ääni-interaktio on niin luonnollista.", "author": "Emma J.", "title": "Markkinointijohtaja"},
+      {"quote": "Järjestelyn kanssa kamppailevana Codot on ollut mullistava. Se tietää tarkalleen, miten tehtäväni priorisoidaan.", "author": "Michael T.", "title": "Ohjelmistoinsinööri"},
+      {"quote": "Mukautuvat muistutukset tekevät Codotista erityisen. Se todella oppii, milloin todennäköisimmin suoritan tietyntyyppisiä tehtäviä.", "author": "Sarah L.", "title": "Freelance-suunnittelija"}
+    ]
+  },
+  "useCases": {
+    "title": "Paras tuottavuussovellus",
+    "titleHighlight": "kaikille",
+    "subtitle": "Tarvitsetpa ADHD-suunnittelijan, henkilökohtaisen avustajan tai tehtävienhallinnan - Codot mukautuu elämäntyyliisi.",
+    "items": [
+      {"title": "ADHD Suunnittelija & Keskittymissovellus", "desc": "Paras tuottavuussovellus ADHD:lle. Dumppaa ajatuksesi, jaa tehtävät hallittaviin vaiheisiin."},
+      {"title": "Henkilökohtainen Avustaja Johtajille", "desc": "Virtuaalinen avustajasi ajanhallintaan kokousmuistiinpanoilla ja älykkäillä muistutuksilla."},
+      {"title": "Opiskelijat & Elämän Järjestely", "desc": "All-in-one-sovellus tarkistuslistalla, päiväsuunnittelijalla ja tapahtumaseurannalla."}
+    ]
+  },
+  "comparison": {"title": "Miksi valita", "titleHighlight": "Codot", "feature": "Ominaisuus", "features": ["Ääni-ensin-interaktio", "Kontekstitietoinen tekoäly", "Automaattinen priorisointi", "Älykäs aikataulutus", "Tietokanta", "Päivittäisen rutiinin oppiminen"]},
+  "faq": {
+    "title": "Usein kysytyt",
+    "titleHighlight": "kysymykset",
+    "items": [
+      {"q": "Onko Codot ilmainen päiväsuunnittelija ja tehtävälistasovellus?", "a": "Kyllä, Codot tarjoaa runsaan ilmaisen version tehtävienhallinnalla, äänimuistiinpanoilla, päiväsuunnittelijalla ja tekoälytoiminnoilla."},
+      {"q": "Onko Codot hyvä ADHD:lle ja brain dumpille?", "a": "Ehdottomasti! Codot on paras ADHD-suunnittelija brain dump -toiminnolla."},
+      {"q": "Miten äänimuistiinpanot toimivat?", "a": "Puhu vain kaapataksesi tehtäviä tai muistiinpanoja. Tekoälymme litteroi ja järjestää automaattisesti."},
+      {"q": "Synkronoituuko suunnittelija Google Kalenterin kanssa?", "a": "Kyllä! Codot integroituu saumattomasti Google Kalenterin, Apple Kalenterin ja Outlookin kanssa."},
+      {"q": "Mikä tekee Codotista erilaisen?", "a": "Codot yhdistää äänimuistiinpanot, tekoälyn priorisoinnin, tapahtumaseurannan, henkilökohtaisen CRM:n ja älykkäät muistutukset yhdessä sovelluksessa."},
+      {"q": "Toimiiko sovellus offline-tilassa?", "a": "Kyllä, voit tarkastella ja hallita tehtävälistaasi offline-tilassa. Muutokset synkronoituvat automaattisesti online-tilassa."}
+    ]
+  },
+  "cta": {"title1": "Ilmainen tekoäly", "title2": "henkilökohtainen avustajasi", "titleHighlight": "odottaa", "description": "Lataa paras päiväsuunnittelija, äänimuistiinpanot ja tehtävienhallintasovellus. Aloita elämäsi järjestäminen tekoälyllä tänään - ilmaiseksi!", "downloadButton": "Lataa App Storesta"},
+  "footer": {"tagline": "Tekoälypohjainen henkilökohtainen avustajasi päivittäiseen suunnitteluun, äänimuistiinpanoihin ja tehtävienhallintaan.", "product": "Tuote", "resources": "Resurssit", "legal": "Oikeudelliset", "privacy": "Tietosuojakäytäntö", "terms": "Käyttöehdot", "copyright": "Kaikki oikeudet pidätetään."}
+}

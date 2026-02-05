@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "title": "Codot - AI Daily Planner & Voice Notes App | To Do List & Task Manager",
+    "description": "Codot is your AI-powered personal assistant for daily planning, voice notes, and task management. Perfect for ADHD users with brain dump feature, smart reminders, habit tracker, and calendar widget."
+  },
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "about": "About",
+    "faq": "FAQ",
+    "downloadApp": "Download App"
+  },
+  "hero": {
+    "badge": "Codot Online",
+    "title1": "AI Daily Planner &",
+    "title2": "Voice Notes App",
+    "description": "Your personal assistant for task management, voice journal, brain dump, and smart reminders. The ultimate to-do list app for ADHD and busy professionals.",
+    "visitWeb": "Visit Web",
+    "downloadNow": "Download Now"
+  },
+  "features": {
+    "title": "Productivity App",
+    "titleHighlight": "Features",
+    "subtitle": "Voice notes, daily planner, task manager, habit tracker, and smart reminders - all powered by AI.",
+    "items": [
+      {
+        "title": "Voice Notes & Voice Journal",
+        "desc": "Record voice memos, create voice diary entries, and capture brain dumps hands-free with AI transcription."
+      },
+      {
+        "title": "AI Task Prioritization",
+        "desc": "Smart to-do list that auto-prioritizes your checklist based on deadlines and importance - perfect for ADHD."
+      },
+      {
+        "title": "Daily & Weekly Planner",
+        "desc": "AI calendar with schedule planner that syncs with Google Calendar. Plan your day effortlessly."
+      },
+      {
+        "title": "Smart Reminder App",
+        "desc": "Adaptive reminders that learn from your habits. Never miss important tasks with intelligent notifications."
+      },
+      {
+        "title": "Habit Tracker",
+        "desc": "Build better routines with habit tracking. Monitor daily habits and achieve your goals consistently."
+      },
+      {
+        "title": "Focus App for ADHD",
+        "desc": "Designed for neurodivergent minds. Brain dump feature helps clear mental clutter and stay focused."
+      },
+      {
+        "title": "Note Taking & Meeting Notes",
+        "desc": "Capture meeting notes with voice, organize with AI. Build your personal knowledge base effortlessly."
+      },
+      {
+        "title": "Contact Manager & Personal CRM",
+        "desc": "Manage your network like an address book. Track relationships and never forget important contacts."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How Codot",
+    "titleHighlight": "Works",
+    "steps": [
+      {
+        "title": "Speak or Chat",
+        "desc": "Communicate with Codot through voice or text, just like talking to a friend."
+      },
+      {
+        "title": "Codot Understands",
+        "desc": "The AI comprehends context, urgency, and your personal patterns."
+      },
+      {
+        "title": "Tasks Organized",
+        "desc": "Your commitments are automatically organized and prioritized."
+      },
+      {
+        "title": "Stay on Track",
+        "desc": "Receive timely reminders and updates tailored to your preferences."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Users",
+    "titleHighlight": "Say",
+    "items": [
+      {
+        "quote": "Codot has completely transformed how I manage my busy schedule. The voice interaction is so natural, it's like having a personal assistant by my side.",
+        "author": "Emma J.",
+        "title": "Marketing Executive"
+      },
+      {
+        "quote": "As someone who struggles with organization, Codot has been a game-changer. It somehow knows exactly how to prioritize my tasks better than I ever could.",
+        "author": "Michael T.",
+        "title": "Software Engineer"
+      },
+      {
+        "quote": "The adaptive reminders are what make Codot special. It actually learns when I'm most likely to complete certain types of tasks and reminds me accordingly.",
+        "author": "Sarah L.",
+        "title": "Freelance Designer"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Best Productivity App for",
+    "titleHighlight": "Everyone",
+    "subtitle": "Whether you need an ADHD planner, personal assistant, or task manager - Codot adapts to your lifestyle.",
+    "items": [
+      {
+        "title": "ADHD Planner & Focus App",
+        "desc": "The best productivity app for ADHD. Brain dump your thoughts, break tasks into manageable steps, and use voice journal to capture ideas without overwhelm. Perfect focus app for neurodivergent minds."
+      },
+      {
+        "title": "Personal Assistant for Executives",
+        "desc": "Your virtual assistant for time management. Task manager with meeting notes, schedule planner, and smart reminders. The ultimate productivity app for busy professionals and entrepreneurs."
+      },
+      {
+        "title": "Students & Life Organizer",
+        "desc": "All-in-one note taking app with checklist, daily planner, and habit tracker. Manage assignments, capture voice notes during lectures, and build your personal knowledge base."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Why Choose",
+    "titleHighlight": "Codot",
+    "feature": "Feature",
+    "features": [
+      "Voice-First Interaction",
+      "Context-Aware AI",
+      "Auto-Prioritization",
+      "Smart Scheduling",
+      "Knowledge Base",
+      "Daily Routine Learning"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "items": [
+      {
+        "q": "Is Codot a free daily planner and to-do list app?",
+        "a": "Yes, Codot offers a generous free tier that includes essential task management, voice notes, daily planner, and AI features. We also have a Pro plan for power users who need advanced habit tracker analytics and unlimited AI interactions."
+      },
+      {
+        "q": "Is Codot good for ADHD and brain dump?",
+        "a": "Absolutely! Codot is the best ADHD planner with brain dump feature. Our AI breaks down overwhelming tasks into manageable steps, provides gentle reminders without nagging, and supports voice journal for capturing thoughts on the go."
+      },
+      {
+        "q": "How does the voice notes and voice journal work?",
+        "a": "Simply speak to capture tasks, notes, or diary entries. Our AI transcribes your voice memos, organizes them automatically, and can even extract action items from your voice journal entries."
+      },
+      {
+        "q": "Does the daily planner sync with Google Calendar?",
+        "a": "Yes! Codot integrates seamlessly with Google Calendar, Apple Calendar, and Outlook. Your schedule planner and calendar widget stay up-to-date across all your devices automatically."
+      },
+      {
+        "q": "What makes Codot different from other task manager apps?",
+        "a": "Codot combines voice notes, AI task prioritization, habit tracker, personal CRM, and smart reminders in one app. Unlike traditional to-do lists, Codot learns your patterns and provides personalized assistance."
+      },
+      {
+        "q": "Does the reminder app work offline?",
+        "a": "Yes, you can view and manage your checklist and to-do list offline. Changes will automatically sync once you're back online, and reminders work even without internet."
+      }
+    ]
+  },
+  "cta": {
+    "title1": "Your Free AI",
+    "title2": "Personal Assistant",
+    "titleHighlight": "Awaits",
+    "description": "Download the best daily planner, voice notes, and task manager app. Start organizing your life with AI today - it's free!",
+    "downloadButton": "Download on the App Store"
+  },
+  "footer": {
+    "tagline": "Your AI-powered personal assistant for daily planning, voice notes, and task management.",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "All rights reserved."
+  }
+}

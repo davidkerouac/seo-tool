@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+/* Sunny Monet Impressionist Color Palette - Warm & Positive */
+:root {
+  /* Bright, sunny backgrounds - warm cream tones */
+  --background: #fffdf8;
+  --background-soft: #fff9f0;
+  --background-mist: #fff5e6;
+
+  /* Warm foreground - chocolate brown, not cold gray */
+  --foreground: #5d4e42;
+  --foreground-muted: #8b7355;
+  --foreground-soft: #b8a590;
+
+  /* Sunny sky blue - bright and warm */
+  --primary: #4eb8d4;
+  --primary-light: #7fd4eb;
+  --primary-soft: #d4f1f9;
+
+  /* Golden sunshine - warm yellow */
+  --secondary: #f5b842;
+  --secondary-light: #ffd06a;
+  --secondary-soft: #fff3d4;
+
+  /* Coral pink - warm and cheerful */
+  --accent: #f4978e;
+  --accent-light: #ffc4bc;
+  --accent-soft: #fff0ee;
+
+  /* Warm peach - soft and inviting */
+  --warm: #ffb385;
+  --warm-light: #ffd4b8;
+  --warm-soft: #fff2e8;
+
+  /* Soft lavender - keeps some balance */
+  --lavender: #c9a8e0;
+  --lavender-light: #e2d0f0;
+  --lavender-soft: #f8f0ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-warm: var(--warm);
+  --color-lavender: var(--lavender);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
+  --font-reading: var(--font-literata);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.font-reading {
+  font-family: var(--font-reading), var(--font-sans);
+}
+
+/* Sunny Monet-inspired background gradients */
+.monet-bg {
+  background: linear-gradient(
+    135deg,
+    var(--background-soft) 0%,
+    var(--secondary-soft) 25%,
+    var(--warm-soft) 50%,
+    var(--accent-soft) 75%,
+    var(--background-soft) 100%
+  );
+}
+
+.monet-bg-subtle {
+  background: linear-gradient(
+    180deg,
+    var(--background-soft) 0%,
+    var(--background) 50%,
+    var(--background-mist) 100%
+  );
+}
+
+.monet-bg-water {
+  background: linear-gradient(
+    135deg,
+    var(--primary-soft) 0%,
+    var(--lavender-soft) 50%,
+    var(--warm-soft) 100%
+  );
+}
+
+.monet-bg-sunset {
+  background: linear-gradient(
+    135deg,
+    var(--secondary-soft) 0%,
+    var(--accent-soft) 50%,
+    var(--warm-soft) 100%
+  );
+}
+
+/* Custom Scrollbar - warm accent */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Custom Utilities for Glassmorphism and Gradients */
+@utility glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(245, 184, 66, 0.15);
+}
+
+@utility glass-monet {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 253, 248, 0.85) 0%,
+    rgba(255, 243, 212, 0.6) 50%,
+    rgba(255, 240, 238, 0.7) 100%
+  );
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(245, 184, 66, 0.12);
+}
+
+@utility text-gradient {
+  background: linear-gradient(to right, var(--primary), var(--secondary), var(--primary));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility text-gradient-warm {
+  background: linear-gradient(to right, var(--secondary), var(--accent), var(--secondary));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility animate-gradient-x {
+  animation: gradient-x 8s ease-in-out infinite;
+}
+
+@utility animate-shimmer {
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Slow pulse for background light effect */
+@utility animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+@utility animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@utility animate-float-slow {
+  animation: float 10s ease-in-out infinite;
+}
+
+/* RTL Support for Arabic */
+html[dir="rtl"] {
+  --font-sans: var(--font-noto-arabic), var(--font-inter);
+}
+
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+html[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+/* Japanese font support */
+html[lang="ja"] {
+  --font-sans: var(--font-noto-jp), var(--font-inter);
+}

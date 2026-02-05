@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "title": "Codot - KI-Tagesplaner & Sprachnotizen-App | To-Do-Liste & Aufgabenverwaltung",
+    "description": "Codot ist Ihr KI-gestützter persönlicher Assistent für Tagesplanung, Sprachnotizen und Aufgabenverwaltung. Perfekt für ADHS-Nutzer mit Brain-Dump-Funktion, intelligenten Erinnerungen, Gewohnheits-Tracker und Kalender-Widget."
+  },
+  "nav": {
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "blog": "Blog",
+    "about": "Über uns",
+    "faq": "FAQ",
+    "downloadApp": "App herunterladen"
+  },
+  "hero": {
+    "badge": "Codot Online",
+    "title1": "KI-Tagesplaner &",
+    "title2": "Sprachnotizen-App",
+    "description": "Ihr persönlicher Assistent für Aufgabenverwaltung, Sprachtagebuch, Brain-Dump und intelligente Erinnerungen. Die ultimative To-Do-Listen-App für ADHS und vielbeschäftigte Berufstätige.",
+    "visitWeb": "Web besuchen",
+    "downloadNow": "Jetzt herunterladen"
+  },
+  "features": {
+    "title": "Produktivitäts-App",
+    "titleHighlight": "Funktionen",
+    "subtitle": "Sprachnotizen, Tagesplaner, Aufgabenverwaltung, Gewohnheits-Tracker und intelligente Erinnerungen - alles KI-gestützt.",
+    "items": [
+      {
+        "title": "Sprachnotizen & Sprachtagebuch",
+        "desc": "Nehmen Sie Sprachnotizen auf, erstellen Sie Sprachtagebuch-Einträge und erfassen Sie Brain-Dumps freihändig mit KI-Transkription."
+      },
+      {
+        "title": "KI-Aufgabenpriorisierung",
+        "desc": "Intelligente To-Do-Liste, die Ihre Checkliste automatisch nach Fristen und Wichtigkeit priorisiert - perfekt für ADHS."
+      },
+      {
+        "title": "Tages- & Wochenplaner",
+        "desc": "KI-Kalender mit Terminplaner, der mit Google Kalender synchronisiert. Planen Sie Ihren Tag mühelos."
+      },
+      {
+        "title": "Intelligente Erinnerungs-App",
+        "desc": "Adaptive Erinnerungen, die aus Ihren Gewohnheiten lernen. Verpassen Sie nie wichtige Aufgaben mit intelligenten Benachrichtigungen."
+      },
+      {
+        "title": "Gewohnheits-Tracker",
+        "desc": "Bauen Sie bessere Routinen mit Gewohnheits-Tracking auf. Überwachen Sie tägliche Gewohnheiten und erreichen Sie Ihre Ziele konsequent."
+      },
+      {
+        "title": "Fokus-App für ADHS",
+        "desc": "Entwickelt für neurodivergente Köpfe. Die Brain-Dump-Funktion hilft, mentales Chaos zu beseitigen und fokussiert zu bleiben."
+      },
+      {
+        "title": "Notizen & Besprechungsnotizen",
+        "desc": "Erfassen Sie Besprechungsnotizen per Sprache und organisieren Sie mit KI. Bauen Sie mühelos Ihre persönliche Wissensdatenbank auf."
+      },
+      {
+        "title": "Kontaktverwaltung & Persönliches CRM",
+        "desc": "Verwalten Sie Ihr Netzwerk wie ein Adressbuch. Verfolgen Sie Beziehungen und vergessen Sie nie wichtige Kontakte."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Wie Codot",
+    "titleHighlight": "funktioniert",
+    "steps": [
+      {
+        "title": "Sprechen oder chatten",
+        "desc": "Kommunizieren Sie mit Codot per Sprache oder Text, genau wie mit einem Freund."
+      },
+      {
+        "title": "Codot versteht",
+        "desc": "Die KI versteht Kontext, Dringlichkeit und Ihre persönlichen Muster."
+      },
+      {
+        "title": "Aufgaben organisiert",
+        "desc": "Ihre Verpflichtungen werden automatisch organisiert und priorisiert."
+      },
+      {
+        "title": "Auf Kurs bleiben",
+        "desc": "Erhalten Sie rechtzeitige Erinnerungen und Updates, die auf Ihre Präferenzen zugeschnitten sind."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Was Nutzer",
+    "titleHighlight": "sagen",
+    "items": [
+      {
+        "quote": "Codot hat völlig verändert, wie ich meinen vollen Terminkalender manage. Die Sprachinteraktion ist so natürlich, als hätte ich einen persönlichen Assistenten an meiner Seite.",
+        "author": "Emma J.",
+        "title": "Marketing-Führungskraft"
+      },
+      {
+        "quote": "Als jemand, der mit Organisation kämpft, war Codot ein Gamechanger. Es weiß irgendwie genau, wie man meine Aufgaben besser priorisiert als ich es je könnte.",
+        "author": "Michael T.",
+        "title": "Software-Ingenieur"
+      },
+      {
+        "quote": "Die adaptiven Erinnerungen machen Codot besonders. Es lernt tatsächlich, wann ich bestimmte Arten von Aufgaben am wahrscheinlichsten erledige und erinnert mich entsprechend.",
+        "author": "Sarah L.",
+        "title": "Freiberufliche Designerin"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Beste Produktivitäts-App",
+    "titleHighlight": "für alle",
+    "subtitle": "Ob Sie einen ADHS-Planer, persönlichen Assistenten oder Aufgabenmanager brauchen - Codot passt sich Ihrem Lebensstil an.",
+    "items": [
+      {
+        "title": "ADHS-Planer & Fokus-App",
+        "desc": "Die beste Produktivitäts-App für ADHS. Dumpen Sie Ihre Gedanken, teilen Sie Aufgaben in überschaubare Schritte auf und nutzen Sie das Sprachtagebuch, um Ideen festzuhalten, ohne überwältigt zu werden."
+      },
+      {
+        "title": "Persönlicher Assistent für Führungskräfte",
+        "desc": "Ihr virtueller Assistent für Zeitmanagement. Aufgabenmanager mit Besprechungsnotizen, Terminplaner und intelligenten Erinnerungen. Die ultimative Produktivitäts-App für vielbeschäftigte Berufstätige und Unternehmer."
+      },
+      {
+        "title": "Studenten & Lebensorganisation",
+        "desc": "All-in-One-Notiz-App mit Checkliste, Tagesplaner und Gewohnheits-Tracker. Verwalten Sie Aufgaben, erfassen Sie Sprachnotizen während Vorlesungen und bauen Sie Ihre persönliche Wissensdatenbank auf."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Warum",
+    "titleHighlight": "Codot wählen",
+    "feature": "Funktion",
+    "features": [
+      "Sprache-zuerst-Interaktion",
+      "Kontextbewusste KI",
+      "Auto-Priorisierung",
+      "Intelligente Terminplanung",
+      "Wissensdatenbank",
+      "Tägliches Routinen-Lernen"
+    ]
+  },
+  "faq": {
+    "title": "Häufig gestellte",
+    "titleHighlight": "Fragen",
+    "items": [
+      {
+        "q": "Ist Codot ein kostenloser Tagesplaner und To-Do-Listen-App?",
+        "a": "Ja, Codot bietet eine großzügige kostenlose Stufe mit grundlegender Aufgabenverwaltung, Sprachnotizen, Tagesplaner und KI-Funktionen. Wir haben auch einen Pro-Plan für Power-User, die erweiterte Gewohnheits-Tracker-Analysen und unbegrenzte KI-Interaktionen benötigen."
+      },
+      {
+        "q": "Ist Codot gut für ADHS und Brain-Dump?",
+        "a": "Absolut! Codot ist der beste ADHS-Planer mit Brain-Dump-Funktion. Unsere KI zerlegt überwältigende Aufgaben in überschaubare Schritte, bietet sanfte Erinnerungen ohne zu nerven und unterstützt Sprachtagebuch zum Festhalten von Gedanken unterwegs."
+      },
+      {
+        "q": "Wie funktionieren Sprachnotizen und Sprachtagebuch?",
+        "a": "Sprechen Sie einfach, um Aufgaben, Notizen oder Tagebucheinträge festzuhalten. Unsere KI transkribiert Ihre Sprachnotizen, organisiert sie automatisch und kann sogar Aktionspunkte aus Ihren Sprachtagebuch-Einträgen extrahieren."
+      },
+      {
+        "q": "Synchronisiert der Tagesplaner mit Google Kalender?",
+        "a": "Ja! Codot integriert sich nahtlos mit Google Kalender, Apple Kalender und Outlook. Ihr Terminplaner und Kalender-Widget bleiben automatisch auf allen Ihren Geräten aktuell."
+      },
+      {
+        "q": "Was unterscheidet Codot von anderen Aufgabenverwaltungs-Apps?",
+        "a": "Codot kombiniert Sprachnotizen, KI-Aufgabenpriorisierung, Gewohnheits-Tracker, persönliches CRM und intelligente Erinnerungen in einer App. Anders als traditionelle To-Do-Listen lernt Codot Ihre Muster und bietet personalisierte Unterstützung."
+      },
+      {
+        "q": "Funktioniert die Erinnerungs-App offline?",
+        "a": "Ja, Sie können Ihre Checkliste und To-Do-Liste offline ansehen und verwalten. Änderungen werden automatisch synchronisiert, sobald Sie wieder online sind, und Erinnerungen funktionieren auch ohne Internet."
+      }
+    ]
+  },
+  "cta": {
+    "title1": "Ihr kostenloser KI",
+    "title2": "persönlicher Assistent",
+    "titleHighlight": "wartet",
+    "description": "Laden Sie die beste Tagesplaner-, Sprachnotizen- und Aufgabenverwaltungs-App herunter. Beginnen Sie heute, Ihr Leben mit KI zu organisieren - kostenlos!",
+    "downloadButton": "Im App Store laden"
+  },
+  "footer": {
+    "tagline": "Ihr KI-gestützter persönlicher Assistent für Tagesplanung, Sprachnotizen und Aufgabenverwaltung.",
+    "product": "Produkt",
+    "resources": "Ressourcen",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "copyright": "Alle Rechte vorbehalten."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "title": "Codot - AI Dagplanerare & Röstanteckningar App | Att-göra-lista & Uppgiftshantering",
+    "description": "Codot är din AI-drivna personliga assistent för daglig planering, röstanteckningar och uppgiftshantering. Perfekt för ADHD-användare med brain dump-funktion, smarta påminnelser, vanetracker och kalenderwidget."
+  },
+  "nav": {"features": "Funktioner", "pricing": "Priser", "blog": "Blogg", "about": "Om oss", "faq": "FAQ", "downloadApp": "Ladda ner"},
+  "hero": {
+    "badge": "Codot Online",
+    "title1": "AI Dagplanerare &",
+    "title2": "Röstanteckningar",
+    "description": "Din personliga assistent för uppgiftshantering, röstdagbok, brain dump och smarta påminnelser. Den ultimata att-göra-appen för ADHD och upptagna yrkesverksamma.",
+    "visitWeb": "Besök Webb",
+    "downloadNow": "Ladda ner nu"
+  },
+  "features": {
+    "title": "Produktivitetsapp",
+    "titleHighlight": "Funktioner",
+    "subtitle": "Röstanteckningar, dagplanerare, uppgiftshanterare, vanetracker och smarta påminnelser - allt AI-drivet.",
+    "items": [
+      {"title": "Röstanteckningar & Röstdagbok", "desc": "Spela in röstmemon, skapa röstdagboksinlägg och fånga brain dumps handsfree med AI-transkription."},
+      {"title": "AI Uppgiftsprioritering", "desc": "Smart att-göra-lista som automatiskt prioriterar din checklista baserat på deadlines och viktighet - perfekt för ADHD."},
+      {"title": "Dag- & Veckoplanerare", "desc": "AI-kalender med planerare som synkar med Google Kalender. Planera din dag utan ansträngning."},
+      {"title": "Smarta Påminnelser App", "desc": "Adaptiva påminnelser som lär sig från dina vanor. Missa aldrig viktiga uppgifter."},
+      {"title": "Vanetracker", "desc": "Bygg bättre rutiner med vanespårning. Övervaka dagliga vanor och nå dina mål konsekvent."},
+      {"title": "Fokusapp för ADHD", "desc": "Designad för neurodivergenta sinnen. Brain dump-funktionen hjälper till att rensa mentalt kaos och hålla fokus."},
+      {"title": "Anteckningar & Mötesanteckningar", "desc": "Fånga mötesanteckningar med röst och organisera med AI. Bygg enkelt din personliga kunskapsbas."},
+      {"title": "Kontakthantering & Personligt CRM", "desc": "Hantera ditt nätverk som en adressbok. Spåra relationer och glöm aldrig viktiga kontakter."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Hur Codot",
+    "titleHighlight": "fungerar",
+    "steps": [
+      {"title": "Prata eller chatta", "desc": "Kommunicera med Codot via röst eller text, precis som att prata med en vän."},
+      {"title": "Codot förstår", "desc": "AI:n förstår kontext, brådska och dina personliga mönster."},
+      {"title": "Uppgifter organiserade", "desc": "Dina åtaganden organiseras och prioriteras automatiskt."},
+      {"title": "Håll dig på banan", "desc": "Få snabba påminnelser och uppdateringar anpassade efter dina preferenser."}
+    ]
+  },
+  "testimonials": {
+    "title": "Vad användare",
+    "titleHighlight": "säger",
+    "items": [
+      {"quote": "Codot har helt förändrat hur jag hanterar mitt upptagna schema. Röstinteraktionen är så naturlig.", "author": "Emma J.", "title": "Marknadschef"},
+      {"quote": "Som någon som kämpar med organisation har Codot varit banbrytande. Den vet exakt hur man prioriterar mina uppgifter.", "author": "Michael T.", "title": "Mjukvaruingenjör"},
+      {"quote": "De adaptiva påminnelserna gör Codot speciell. Den lär sig verkligen när jag är mest benägen att slutföra vissa typer av uppgifter.", "author": "Sarah L.", "title": "Frilansdesigner"}
+    ]
+  },
+  "useCases": {
+    "title": "Bästa produktivitetsapp",
+    "titleHighlight": "för alla",
+    "subtitle": "Oavsett om du behöver en ADHD-planerare, personlig assistent eller uppgiftshanterare - Codot anpassar sig till din livsstil.",
+    "items": [
+      {"title": "ADHD Planerare & Fokusapp", "desc": "Bästa produktivitetsappen för ADHD. Dumpa dina tankar, dela upp uppgifter i hanterbara steg."},
+      {"title": "Personlig Assistent för Chefer", "desc": "Din virtuella assistent för tidshantering med mötesanteckningar och smarta påminnelser."},
+      {"title": "Studenter & Livsorganisation", "desc": "Allt-i-ett-app med checklista, dagplanerare och vanetracker."}
+    ]
+  },
+  "comparison": {"title": "Varför välja", "titleHighlight": "Codot", "feature": "Funktion", "features": ["Röst-först-interaktion", "Kontextmedveten AI", "Auto-prioritering", "Smart schemaläggning", "Kunskapsbas", "Daglig rutininlärning"]},
+  "faq": {
+    "title": "Vanliga",
+    "titleHighlight": "frågor",
+    "items": [
+      {"q": "Är Codot en gratis dagplanerare och att-göra-app?", "a": "Ja, Codot erbjuder en generös gratisversion med uppgiftshantering, röstanteckningar, dagplanerare och AI-funktioner."},
+      {"q": "Är Codot bra för ADHD och brain dump?", "a": "Absolut! Codot är den bästa ADHD-planeraren med brain dump-funktion."},
+      {"q": "Hur fungerar röstanteckningar?", "a": "Prata bara för att fånga uppgifter eller anteckningar. Vår AI transkriberar och organiserar automatiskt."},
+      {"q": "Synkar planeraren med Google Kalender?", "a": "Ja! Codot integreras sömlöst med Google Kalender, Apple Kalender och Outlook."},
+      {"q": "Vad gör Codot annorlunda?", "a": "Codot kombinerar röstanteckningar, AI-prioritering, vanetracker, personligt CRM och smarta påminnelser i en app."},
+      {"q": "Fungerar appen offline?", "a": "Ja, du kan visa och hantera din att-göra-lista offline. Ändringar synkas automatiskt online."}
+    ]
+  },
+  "cta": {"title1": "Din gratis AI", "title2": "personliga assistent", "titleHighlight": "väntar", "description": "Ladda ner den bästa dagplaneraren, röstanteckningar och uppgiftshanteringsappen. Börja organisera ditt liv med AI idag - gratis!", "downloadButton": "Ladda ner på App Store"},
+  "footer": {"tagline": "Din AI-drivna personliga assistent för daglig planering, röstanteckningar och uppgiftshantering.", "product": "Produkt", "resources": "Resurser", "legal": "Juridiskt", "privacy": "Integritetspolicy", "terms": "Användarvillkor", "copyright": "Alla rättigheter förbehållna."}
+}

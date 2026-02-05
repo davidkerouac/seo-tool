@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "title": "Codot - AI Dagplanner & Spraaknotities App | Takenlijst & Taakbeheer",
+    "description": "Codot is je AI-aangedreven persoonlijke assistent voor dagelijkse planning, spraaknotities en taakbeheer. Perfect voor ADHD-gebruikers met brain dump functie, slimme herinneringen, gewoontetracker en kalenderwidget."
+  },
+  "nav": {"features": "Functies", "pricing": "Prijzen", "blog": "Blog", "about": "Over ons", "faq": "FAQ", "downloadApp": "Download App"},
+  "hero": {
+    "badge": "Codot Online",
+    "title1": "AI Dagplanner &",
+    "title2": "Spraaknotities",
+    "description": "Je persoonlijke assistent voor taakbeheer, spraakdagboek, brain dump en slimme herinneringen. De ultieme takenlijst-app voor ADHD en drukke professionals.",
+    "visitWeb": "Bezoek Web",
+    "downloadNow": "Download Nu"
+  },
+  "features": {
+    "title": "Productiviteits-App",
+    "titleHighlight": "Functies",
+    "subtitle": "Spraaknotities, dagplanner, taakbeheer, gewoontetracker en slimme herinneringen - allemaal AI-aangedreven.",
+    "items": [
+      {"title": "Spraaknotities & Spraakdagboek", "desc": "Neem spraakmemo's op, maak spraakdagboek-items en leg brain dumps handsfree vast met AI-transcriptie."},
+      {"title": "AI Taakprioritering", "desc": "Slimme takenlijst die automatisch je checklist prioriteert op basis van deadlines en belangrijkheid - perfect voor ADHD."},
+      {"title": "Dag- & Weekplanner", "desc": "AI-kalender met planner die synchroniseert met Google Agenda. Plan moeiteloos je dag."},
+      {"title": "Slimme Herinneringen App", "desc": "Adaptieve herinneringen die leren van je gewoontes. Mis nooit belangrijke taken."},
+      {"title": "Gewoontetracker", "desc": "Bouw betere routines met gewoontetracking. Monitor dagelijkse gewoontes en bereik consistent je doelen."},
+      {"title": "Focus App voor ADHD", "desc": "Ontworpen voor neurodiverse geesten. Brain dump functie helpt mentale rommel op te ruimen en gefocust te blijven."},
+      {"title": "Notities & Vergadernotities", "desc": "Leg vergadernotities vast met spraak en organiseer met AI. Bouw moeiteloos je persoonlijke kennisbank."},
+      {"title": "Contactbeheer & Persoonlijk CRM", "desc": "Beheer je netwerk als een adresboek. Volg relaties en vergeet nooit belangrijke contacten."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Hoe Codot",
+    "titleHighlight": "werkt",
+    "steps": [
+      {"title": "Spreek of chat", "desc": "Communiceer met Codot via spraak of tekst, net als praten met een vriend."},
+      {"title": "Codot begrijpt", "desc": "De AI begrijpt context, urgentie en je persoonlijke patronen."},
+      {"title": "Taken georganiseerd", "desc": "Je verplichtingen worden automatisch georganiseerd en geprioriteerd."},
+      {"title": "Blijf op koers", "desc": "Ontvang tijdige herinneringen en updates afgestemd op je voorkeuren."}
+    ]
+  },
+  "testimonials": {
+    "title": "Wat gebruikers",
+    "titleHighlight": "zeggen",
+    "items": [
+      {"quote": "Codot heeft volledig veranderd hoe ik mijn drukke schema beheer. De spraakinteractie is zo natuurlijk.", "author": "Emma J.", "title": "Marketing Executive"},
+      {"quote": "Als iemand die worstelt met organisatie, was Codot een gamechanger. Het weet precies hoe mijn taken te prioriteren.", "author": "Michael T.", "title": "Software Engineer"},
+      {"quote": "De adaptieve herinneringen maken Codot speciaal. Het leert echt wanneer ik bepaalde taken het meest waarschijnlijk afmaak.", "author": "Sarah L.", "title": "Freelance Designer"}
+    ]
+  },
+  "useCases": {
+    "title": "Beste Productiviteits-App",
+    "titleHighlight": "voor iedereen",
+    "subtitle": "Of je nu een ADHD-planner, persoonlijke assistent of taakbeheer nodig hebt - Codot past zich aan je levensstijl aan.",
+    "items": [
+      {"title": "ADHD Planner & Focus App", "desc": "De beste productiviteits-app voor ADHD. Dump je gedachten, verdeel taken in beheersbare stappen."},
+      {"title": "Persoonlijke Assistent voor Executives", "desc": "Je virtuele assistent voor tijdbeheer met vergadernotities en slimme herinneringen."},
+      {"title": "Studenten & Levensorganisatie", "desc": "Alles-in-één app met checklist, dagplanner en gewoontetracker."}
+    ]
+  },
+  "comparison": {"title": "Waarom kiezen voor", "titleHighlight": "Codot", "feature": "Functie", "features": ["Spraak-eerst interactie", "Contextbewuste AI", "Auto-prioritering", "Slimme planning", "Kennisbank", "Dagelijkse routine leren"]},
+  "faq": {
+    "title": "Veelgestelde",
+    "titleHighlight": "vragen",
+    "items": [
+      {"q": "Is Codot een gratis dagplanner en takenlijst-app?", "a": "Ja, Codot biedt een royale gratis versie met taakbeheer, spraaknotities, dagplanner en AI-functies."},
+      {"q": "Is Codot goed voor ADHD en brain dump?", "a": "Absoluut! Codot is de beste ADHD-planner met brain dump functie."},
+      {"q": "Hoe werken spraaknotities?", "a": "Spreek gewoon om taken of notities vast te leggen. Onze AI transcribeert en organiseert automatisch."},
+      {"q": "Synchroniseert de planner met Google Agenda?", "a": "Ja! Codot integreert naadloos met Google Agenda, Apple Agenda en Outlook."},
+      {"q": "Wat maakt Codot anders?", "a": "Codot combineert spraaknotities, AI-prioritering, gewoontetracker, persoonlijk CRM en slimme herinneringen in één app."},
+      {"q": "Werkt de app offline?", "a": "Ja, je kunt je takenlijst offline bekijken en beheren. Wijzigingen synchroniseren automatisch online."}
+    ]
+  },
+  "cta": {"title1": "Je gratis AI", "title2": "persoonlijke assistent", "titleHighlight": "wacht", "description": "Download de beste dagplanner, spraaknotities en taakbeheer-app. Begin vandaag je leven te organiseren met AI - gratis!", "downloadButton": "Download in App Store"},
+  "footer": {"tagline": "Je AI-aangedreven persoonlijke assistent voor dagelijkse planning, spraaknotities en taakbeheer.", "product": "Product", "resources": "Bronnen", "legal": "Juridisch", "privacy": "Privacybeleid", "terms": "Gebruiksvoorwaarden", "copyright": "Alle rechten voorbehouden."}
+}

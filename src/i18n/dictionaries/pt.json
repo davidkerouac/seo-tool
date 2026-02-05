@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "title": "Codot - Planejador Diário IA & App de Notas de Voz | Lista de Tarefas & Gestão",
+    "description": "Codot é seu assistente pessoal com IA para planejamento diário, notas de voz e gestão de tarefas. Perfeito para usuários com TDAH com função brain dump, lembretes inteligentes, rastreador de hábitos e widget de calendário."
+  },
+  "nav": {"features": "Recursos", "pricing": "Preços", "blog": "Blog", "about": "Sobre", "faq": "FAQ", "downloadApp": "Baixar App"},
+  "hero": {
+    "badge": "Codot Online",
+    "title1": "Planejador IA &",
+    "title2": "Notas de Voz",
+    "description": "Seu assistente pessoal para gestão de tarefas, diário de voz, brain dump e lembretes inteligentes. O app definitivo de lista de tarefas para TDAH e profissionais ocupados.",
+    "visitWeb": "Visitar Web",
+    "downloadNow": "Baixar Agora"
+  },
+  "features": {
+    "title": "App de Produtividade",
+    "titleHighlight": "Recursos",
+    "subtitle": "Notas de voz, planejador diário, gestor de tarefas, rastreador de hábitos e lembretes inteligentes - tudo com IA.",
+    "items": [
+      {"title": "Notas de Voz & Diário de Voz", "desc": "Grave memos de voz, crie entradas de diário de voz e capture brain dumps sem usar as mãos com transcrição IA."},
+      {"title": "Priorização de Tarefas IA", "desc": "Lista de tarefas inteligente que prioriza automaticamente seu checklist por prazos e importância - perfeito para TDAH."},
+      {"title": "Planejador Diário & Semanal", "desc": "Calendário IA com planejador sincronizado com Google Calendar. Planeje seu dia sem esforço."},
+      {"title": "App de Lembretes Inteligentes", "desc": "Lembretes adaptativos que aprendem com seus hábitos. Nunca perca tarefas importantes."},
+      {"title": "Rastreador de Hábitos", "desc": "Construa melhores rotinas com rastreamento de hábitos. Monitore hábitos diários e alcance metas consistentemente."},
+      {"title": "App de Foco para TDAH", "desc": "Projetado para mentes neurodivergentes. A função brain dump ajuda a limpar a desordem mental e manter o foco."},
+      {"title": "Notas & Anotações de Reunião", "desc": "Capture anotações de reunião por voz e organize com IA. Construa facilmente sua base de conhecimento pessoal."},
+      {"title": "Gestão de Contatos & CRM Pessoal", "desc": "Gerencie sua rede como uma agenda. Rastreie relacionamentos e nunca esqueça contatos importantes."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Como o Codot",
+    "titleHighlight": "funciona",
+    "steps": [
+      {"title": "Fale ou converse", "desc": "Comunique-se com o Codot por voz ou texto, como falar com um amigo."},
+      {"title": "Codot entende", "desc": "A IA entende contexto, urgência e seus padrões pessoais."},
+      {"title": "Tarefas organizadas", "desc": "Seus compromissos são organizados e priorizados automaticamente."},
+      {"title": "Mantenha-se no caminho", "desc": "Receba lembretes e atualizações oportunas adaptadas às suas preferências."}
+    ]
+  },
+  "testimonials": {
+    "title": "O que dizem",
+    "titleHighlight": "os usuários",
+    "items": [
+      {"quote": "Codot transformou completamente como gerencio minha agenda ocupada. A interação por voz é tão natural.", "author": "Emma J.", "title": "Executiva de Marketing"},
+      {"quote": "Como alguém que luta com organização, Codot foi revolucionário. Ele sabe exatamente como priorizar minhas tarefas.", "author": "Michael T.", "title": "Engenheiro de Software"},
+      {"quote": "Os lembretes adaptativos tornam o Codot especial. Ele realmente aprende quando é mais provável que eu complete certos tipos de tarefas.", "author": "Sarah L.", "title": "Designer Freelance"}
+    ]
+  },
+  "useCases": {
+    "title": "Melhor App de Produtividade",
+    "titleHighlight": "para todos",
+    "subtitle": "Precisa de um planejador TDAH, assistente pessoal ou gestor de tarefas - Codot se adapta ao seu estilo de vida.",
+    "items": [
+      {"title": "Planejador TDAH & App de Foco", "desc": "O melhor app de produtividade para TDAH. Despeje pensamentos, divida tarefas em passos gerenciáveis."},
+      {"title": "Assistente Pessoal para Executivos", "desc": "Seu assistente virtual para gestão de tempo com anotações de reunião e lembretes inteligentes."},
+      {"title": "Estudantes & Organização de Vida", "desc": "App tudo-em-um com checklist, planejador diário e rastreador de hábitos."}
+    ]
+  },
+  "comparison": {"title": "Por que escolher", "titleHighlight": "Codot", "feature": "Recurso", "features": ["Interação voz-primeiro", "IA contextual", "Auto-priorização", "Agendamento inteligente", "Base de conhecimento", "Aprendizado de rotina"]},
+  "faq": {
+    "title": "Perguntas",
+    "titleHighlight": "frequentes",
+    "items": [
+      {"q": "Codot é um planejador gratuito e app de lista de tarefas?", "a": "Sim, Codot oferece um nível gratuito generoso com gestão de tarefas, notas de voz, planejador diário e recursos de IA."},
+      {"q": "Codot é bom para TDAH e brain dump?", "a": "Com certeza! Codot é o melhor planejador TDAH com função brain dump."},
+      {"q": "Como funcionam as notas de voz?", "a": "Simplesmente fale para capturar tarefas ou notas. Nossa IA transcreve e organiza automaticamente."},
+      {"q": "O planejador sincroniza com Google Calendar?", "a": "Sim! Codot integra perfeitamente com Google Calendar, Apple Calendar e Outlook."},
+      {"q": "O que torna o Codot diferente?", "a": "Codot combina notas de voz, priorização IA, rastreador de hábitos, CRM pessoal e lembretes inteligentes em um app."},
+      {"q": "O app funciona offline?", "a": "Sim, você pode ver e gerenciar sua lista de tarefas offline. Mudanças sincronizam automaticamente online."}
+    ]
+  },
+  "cta": {"title1": "Seu assistente", "title2": "pessoal IA gratuito", "titleHighlight": "espera", "description": "Baixe o melhor planejador diário, notas de voz e app de gestão de tarefas. Comece a organizar sua vida com IA - grátis!", "downloadButton": "Baixar na App Store"},
+  "footer": {"tagline": "Seu assistente pessoal com IA para planejamento diário, notas de voz e gestão de tarefas.", "product": "Produto", "resources": "Recursos", "legal": "Legal", "privacy": "Política de Privacidade", "terms": "Termos de Serviço", "copyright": "Todos os direitos reservados."}
+}

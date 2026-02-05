@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "title": "Codot - AI Dagplanlægger & Stemmenoter App | Opgaveliste & Opgavestyring",
+    "description": "Codot er din AI-drevne personlige assistent til daglig planlægning, stemmenoter og opgavestyring. Perfekt til ADHD-brugere med brain dump-funktion, smarte påmindelser, vanesporing og kalenderwidget."
+  },
+  "nav": {"features": "Funktioner", "pricing": "Priser", "blog": "Blog", "about": "Om os", "faq": "FAQ", "downloadApp": "Download"},
+  "hero": {
+    "badge": "Codot Online",
+    "title1": "AI Dagplanlægger &",
+    "title2": "Stemmenoter",
+    "description": "Din personlige assistent til opgavestyring, stemmedagbog, brain dump og smarte påmindelser. Den ultimative opgaveliste-app til ADHD og travle professionelle.",
+    "visitWeb": "Besøg Web",
+    "downloadNow": "Download nu"
+  },
+  "features": {
+    "title": "Produktivitetsapp",
+    "titleHighlight": "Funktioner",
+    "subtitle": "Stemmenoter, dagplanlægger, opgavestyring, vanesporing og smarte påmindelser - alt AI-drevet.",
+    "items": [
+      {"title": "Stemmenoter & Stemmedagbog", "desc": "Optag stemmememoer, lav stemmedagbogsindlæg og fang brain dumps håndfrit med AI-transskription."},
+      {"title": "AI Opgaveprioritering", "desc": "Smart opgaveliste der automatisk prioriterer din tjekliste baseret på deadlines og vigtighed - perfekt til ADHD."},
+      {"title": "Dag- & Ugeplanlægger", "desc": "AI-kalender med planlægger der synkroniserer med Google Kalender. Planlæg din dag ubesværet."},
+      {"title": "Smarte Påmindelser App", "desc": "Adaptive påmindelser der lærer af dine vaner. Gå aldrig glip af vigtige opgaver."},
+      {"title": "Vanesporing", "desc": "Byg bedre rutiner med vanesporing. Overvåg daglige vaner og nå dine mål konsekvent."},
+      {"title": "Fokusapp til ADHD", "desc": "Designet til neurodiverse sind. Brain dump-funktionen hjælper med at rydde mentalt kaos og holde fokus."},
+      {"title": "Noter & Mødenoter", "desc": "Fang mødenoter med stemme og organiser med AI. Byg nemt din personlige vidensbase."},
+      {"title": "Kontaktstyring & Personlig CRM", "desc": "Håndter dit netværk som en adressebog. Spor relationer og glem aldrig vigtige kontakter."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Hvordan Codot",
+    "titleHighlight": "fungerer",
+    "steps": [
+      {"title": "Tal eller chat", "desc": "Kommuniker med Codot via stemme eller tekst, ligesom at tale med en ven."},
+      {"title": "Codot forstår", "desc": "AI'en forstår kontekst, hastværk og dine personlige mønstre."},
+      {"title": "Opgaver organiseret", "desc": "Dine forpligtelser organiseres og prioriteres automatisk."},
+      {"title": "Hold dig på sporet", "desc": "Få rettidige påmindelser og opdateringer tilpasset dine præferencer."}
+    ]
+  },
+  "testimonials": {
+    "title": "Hvad brugere",
+    "titleHighlight": "siger",
+    "items": [
+      {"quote": "Codot har fuldstændig ændret hvordan jeg håndterer min travle tidsplan. Stemmeinteraktionen er så naturlig.", "author": "Emma J.", "title": "Marketingchef"},
+      {"quote": "Som en der kæmper med organisering, har Codot været banebrydende. Den ved præcis hvordan man prioriterer mine opgaver.", "author": "Michael T.", "title": "Softwareingeniør"},
+      {"quote": "De adaptive påmindelser gør Codot speciel. Den lærer virkelig hvornår jeg er mest tilbøjelig til at fuldføre visse typer opgaver.", "author": "Sarah L.", "title": "Freelancedesigner"}
+    ]
+  },
+  "useCases": {
+    "title": "Bedste produktivitetsapp",
+    "titleHighlight": "til alle",
+    "subtitle": "Uanset om du har brug for en ADHD-planlægger, personlig assistent eller opgavestyring - Codot tilpasser sig din livsstil.",
+    "items": [
+      {"title": "ADHD Planlægger & Fokusapp", "desc": "Bedste produktivitetsapp til ADHD. Dump dine tanker, opdel opgaver i håndterbare trin."},
+      {"title": "Personlig Assistent til Ledere", "desc": "Din virtuelle assistent til tidsstyring med mødenoter og smarte påmindelser."},
+      {"title": "Studerende & Livsorganisering", "desc": "Alt-i-én-app med tjekliste, dagplanlægger og vanesporing."}
+    ]
+  },
+  "comparison": {"title": "Hvorfor vælge", "titleHighlight": "Codot", "feature": "Funktion", "features": ["Stemme-først-interaktion", "Kontekstbevidst AI", "Auto-prioritering", "Smart planlægning", "Vidensbase", "Daglig rutinelæring"]},
+  "faq": {
+    "title": "Ofte stillede",
+    "titleHighlight": "spørgsmål",
+    "items": [
+      {"q": "Er Codot en gratis dagplanlægger og opgaveliste-app?", "a": "Ja, Codot tilbyder en generøs gratis version med opgavestyring, stemmenoter, dagplanlægger og AI-funktioner."},
+      {"q": "Er Codot god til ADHD og brain dump?", "a": "Absolut! Codot er den bedste ADHD-planlægger med brain dump-funktion."},
+      {"q": "Hvordan fungerer stemmenoter?", "a": "Bare tal for at fange opgaver eller noter. Vores AI transskriberer og organiserer automatisk."},
+      {"q": "Synkroniserer planlæggeren med Google Kalender?", "a": "Ja! Codot integreres problemfrit med Google Kalender, Apple Kalender og Outlook."},
+      {"q": "Hvad gør Codot anderledes?", "a": "Codot kombinerer stemmenoter, AI-prioritering, vanesporing, personlig CRM og smarte påmindelser i én app."},
+      {"q": "Fungerer appen offline?", "a": "Ja, du kan se og håndtere din opgaveliste offline. Ændringer synkroniseres automatisk online."}
+    ]
+  },
+  "cta": {"title1": "Din gratis AI", "title2": "personlige assistent", "titleHighlight": "venter", "description": "Download den bedste dagplanlægger, stemmenoter og opgavestyringsapp. Begynd at organisere dit liv med AI i dag - gratis!", "downloadButton": "Download på App Store"},
+  "footer": {"tagline": "Din AI-drevne personlige assistent til daglig planlægning, stemmenoter og opgavestyring.", "product": "Produkt", "resources": "Ressourcer", "legal": "Juridisk", "privacy": "Privatlivspolitik", "terms": "Brugsvilkår", "copyright": "Alle rettigheder forbeholdes."}
+}

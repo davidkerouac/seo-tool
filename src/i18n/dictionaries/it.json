@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "title": "Codot - Planner Giornaliero IA & App Note Vocali | Lista Attività & Gestione",
+    "description": "Codot è il tuo assistente personale basato su IA per pianificazione giornaliera, note vocali e gestione attività. Perfetto per utenti ADHD con funzione brain dump, promemoria intelligenti, tracker abitudini e widget calendario."
+  },
+  "nav": {"features": "Funzionalità", "pricing": "Prezzi", "blog": "Blog", "about": "Chi siamo", "faq": "FAQ", "downloadApp": "Scarica App"},
+  "hero": {
+    "badge": "Codot Online",
+    "title1": "Planner IA &",
+    "title2": "Note Vocali",
+    "description": "Il tuo assistente personale per gestione attività, diario vocale, brain dump e promemoria intelligenti. L'app definitiva per ADHD e professionisti impegnati.",
+    "visitWeb": "Visita Web",
+    "downloadNow": "Scarica Ora"
+  },
+  "features": {
+    "title": "App Produttività",
+    "titleHighlight": "Funzionalità",
+    "subtitle": "Note vocali, planner giornaliero, gestore attività, tracker abitudini e promemoria intelligenti - tutto basato su IA.",
+    "items": [
+      {"title": "Note Vocali & Diario Vocale", "desc": "Registra memo vocali, crea voci di diario vocale e cattura brain dump a mani libere con trascrizione IA."},
+      {"title": "Prioritizzazione Attività IA", "desc": "Lista attività intelligente che prioritizza automaticamente la checklist per scadenze e importanza - perfetto per ADHD."},
+      {"title": "Planner Giornaliero & Settimanale", "desc": "Calendario IA con planner sincronizzato con Google Calendar. Pianifica la giornata senza sforzo."},
+      {"title": "App Promemoria Intelligenti", "desc": "Promemoria adattivi che imparano dalle tue abitudini. Non perdere mai attività importanti."},
+      {"title": "Tracker Abitudini", "desc": "Costruisci routine migliori con il tracking delle abitudini. Monitora le abitudini quotidiane e raggiungi i tuoi obiettivi."},
+      {"title": "App Focus per ADHD", "desc": "Progettato per menti neurodivergenti. La funzione brain dump aiuta a eliminare il disordine mentale e mantenere il focus."},
+      {"title": "Note & Appunti Riunioni", "desc": "Cattura appunti delle riunioni con la voce e organizza con IA. Costruisci facilmente la tua base di conoscenza."},
+      {"title": "Gestione Contatti & CRM Personale", "desc": "Gestisci la tua rete come una rubrica. Traccia le relazioni e non dimenticare mai contatti importanti."}
+    ]
+  },
+  "howItWorks": {
+    "title": "Come funziona",
+    "titleHighlight": "Codot",
+    "steps": [
+      {"title": "Parla o chatta", "desc": "Comunica con Codot tramite voce o testo, come parlare con un amico."},
+      {"title": "Codot capisce", "desc": "L'IA comprende contesto, urgenza e i tuoi pattern personali."},
+      {"title": "Attività organizzate", "desc": "I tuoi impegni vengono organizzati e prioritizzati automaticamente."},
+      {"title": "Resta in carreggiata", "desc": "Ricevi promemoria e aggiornamenti tempestivi adattati alle tue preferenze."}
+    ]
+  },
+  "testimonials": {
+    "title": "Cosa dicono",
+    "titleHighlight": "gli utenti",
+    "items": [
+      {"quote": "Codot ha completamente trasformato come gestisco la mia agenda impegnata. L'interazione vocale è così naturale.", "author": "Emma J.", "title": "Marketing Executive"},
+      {"quote": "Come qualcuno che lotta con l'organizzazione, Codot è stato rivoluzionario. Sa esattamente come prioritizzare i miei compiti.", "author": "Michael T.", "title": "Ingegnere Software"},
+      {"quote": "I promemoria adattivi rendono Codot speciale. Impara davvero quando sono più propenso a completare certi tipi di attività.", "author": "Sarah L.", "title": "Designer Freelance"}
+    ]
+  },
+  "useCases": {
+    "title": "Migliore App Produttività",
+    "titleHighlight": "per tutti",
+    "subtitle": "Che tu abbia bisogno di un planner ADHD, assistente personale o gestore attività - Codot si adatta al tuo stile di vita.",
+    "items": [
+      {"title": "Planner ADHD & App Focus", "desc": "La migliore app di produttività per ADHD. Scarica i pensieri, dividi le attività in passi gestibili."},
+      {"title": "Assistente Personale per Executive", "desc": "Il tuo assistente virtuale per la gestione del tempo. Gestore attività con appunti riunioni e promemoria intelligenti."},
+      {"title": "Studenti & Organizzazione Vita", "desc": "App tutto-in-uno con checklist, planner giornaliero e tracker abitudini."}
+    ]
+  },
+  "comparison": {"title": "Perché scegliere", "titleHighlight": "Codot", "feature": "Funzionalità", "features": ["Interazione voce-first", "IA contestuale", "Auto-prioritizzazione", "Pianificazione intelligente", "Base di conoscenza", "Apprendimento routine"]},
+  "faq": {
+    "title": "Domande",
+    "titleHighlight": "frequenti",
+    "items": [
+      {"q": "Codot è un planner gratuito e app lista attività?", "a": "Sì, Codot offre un livello gratuito generoso con gestione attività, note vocali, planner giornaliero e funzionalità IA."},
+      {"q": "Codot è buono per ADHD e brain dump?", "a": "Assolutamente! Codot è il miglior planner ADHD con funzione brain dump."},
+      {"q": "Come funzionano le note vocali?", "a": "Parla semplicemente per catturare attività o note. La nostra IA trascrive e organizza automaticamente."},
+      {"q": "Il planner si sincronizza con Google Calendar?", "a": "Sì! Codot si integra perfettamente con Google Calendar, Apple Calendar e Outlook."},
+      {"q": "Cosa rende Codot diverso?", "a": "Codot combina note vocali, prioritizzazione IA, tracker abitudini, CRM personale e promemoria intelligenti in un'unica app."},
+      {"q": "L'app funziona offline?", "a": "Sì, puoi visualizzare e gestire la lista attività offline. Le modifiche si sincronizzano automaticamente online."}
+    ]
+  },
+  "cta": {"title1": "Il tuo assistente", "title2": "personale IA gratuito", "titleHighlight": "ti aspetta", "description": "Scarica il miglior planner giornaliero, note vocali e app gestione attività. Inizia a organizzare la tua vita con IA - gratis!", "downloadButton": "Scarica su App Store"},
+  "footer": {"tagline": "Il tuo assistente personale basato su IA per pianificazione giornaliera, note vocali e gestione attività.", "product": "Prodotto", "resources": "Risorse", "legal": "Legale", "privacy": "Privacy Policy", "terms": "Termini di Servizio", "copyright": "Tutti i diritti riservati."}
+}
