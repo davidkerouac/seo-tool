@@ -1,41 +1,41 @@
 @import "tailwindcss";
 
-/* Dreamy Soft Pastel Color Palette - Like Morning Mist */
+/* Warm Dreamy Pastel Color Palette - Purple & Warm Tones */
 :root {
-  /* Almost white backgrounds with subtle warmth */
+  /* Warm white backgrounds */
   --background: #fefefe;
-  --background-soft: #fcfcfc;
-  --background-mist: #fafafa;
+  --background-soft: #fdfaf8;
+  --background-mist: #faf8fc;
 
   /* Soft dark foreground for readability */
   --foreground: #2d2d2d;
   --foreground-muted: #6b6b6b;
   --foreground-soft: #a0a0a0;
 
-  /* Dreamy pale cyan - like the left edge of the image */
-  --primary: #c5e5ed;
-  --primary-light: #dff0f5;
-  --primary-soft: #f0f9fb;
+  /* Soft purple/lavender - primary accent */
+  --primary: #d8bfe7;
+  --primary-light: #e8d8f2;
+  --primary-soft: #f5f0f9;
 
-  /* Soft peachy cream - very subtle */
-  --secondary: #f5e8d8;
-  --secondary-light: #faf3eb;
-  --secondary-soft: #fdfaf6;
+  /* Warm peach/coral - secondary */
+  --secondary: #ffdac8;
+  --secondary-light: #ffe8dc;
+  --secondary-soft: #fff5f0;
 
-  /* Pale blush pink - barely there */
-  --accent: #f8e0dd;
-  --accent-light: #fbedeb;
-  --accent-soft: #fef7f6;
+  /* Soft pink - accent */
+  --accent: #ffd2dc;
+  --accent-light: #ffe5eb;
+  --accent-soft: #fff5f7;
 
-  /* Soft peach - dreamy warmth */
-  --warm: #fae5dc;
-  --warm-light: #fcf0eb;
-  --warm-soft: #fef8f5;
+  /* Warm golden peach */
+  --warm: #ffe6c8;
+  --warm-light: #fff0dc;
+  --warm-soft: #fff8f0;
 
-  /* Pale lavender - soft purple hint */
-  --lavender: #e8e0f0;
-  --lavender-light: #f2eef8;
-  --lavender-soft: #f9f7fc;
+  /* Rich lavender - purple tones */
+  --lavender: #dcc8f0;
+  --lavender-light: #ebe0f5;
+  --lavender-soft: #f8f5fc;
 }
 
 @theme inline {
