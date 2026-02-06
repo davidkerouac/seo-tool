@@ -97,6 +97,17 @@ const nextConfig: NextConfig = {
         destination: "/faq",
         permanent: true,
       },
+      // Redirect all privacy pages (including locale versions) to external privacy policy
+      {
+        source: "/privacy",
+        destination: "https://codot.ai/privacy_policy",
+        permanent: true,
+      },
+      {
+        source: "/:locale(zh|ja|ko|ar|de|fr|es|ru|it|nl|pt|sv|no|da|fi)/privacy",
+        destination: "https://codot.ai/privacy_policy",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {

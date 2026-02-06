@@ -1,72 +1,64 @@
 "use client";
 
-// Warm dreamy pastel background with purple and warm tones
-// Rich gradients blending lavender, peach, pink, and soft coral
+// Light airy pastel background - positive and uplifting
+// Soft cyan-to-pink gradient like the reference image
 
 export function AnimatedBackground() {
     return (
         <div className="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
-            {/* Warm white base with subtle gradient */}
+            {/* Light base gradient - cyan to pink */}
             <div
                 className="absolute inset-0"
                 style={{
-                    background: "linear-gradient(135deg, #fefefe 0%, #fdf9f7 50%, #faf8fc 100%)",
+                    background: "linear-gradient(135deg, #e8f4f8 0%, #faf9fc 30%, #fef9f8 60%, #fdf5f8 100%)",
                 }}
             />
 
-            {/* Soft lavender/purple - top left */}
+            {/* Soft cyan/aqua - left side */}
             <div
-                className="absolute top-0 left-0 w-[50vw] h-[60vh]"
+                className="absolute top-0 left-0 w-[50vw] h-full"
                 style={{
-                    background: "radial-gradient(ellipse at 20% 30%, rgba(216, 191, 231, 0.45) 0%, rgba(232, 224, 240, 0.25) 40%, transparent 70%)",
+                    background: "linear-gradient(to right, rgba(200, 230, 245, 0.6) 0%, rgba(210, 235, 248, 0.3) 50%, transparent 100%)",
                 }}
             />
 
-            {/* Warm peach/coral - right side */}
+            {/* Soft pink/rose - right side */}
             <div
-                className="absolute top-[10%] right-0 w-[55vw] h-[70vh]"
+                className="absolute top-0 right-0 w-[50vw] h-full"
                 style={{
-                    background: "radial-gradient(ellipse at 80% 40%, rgba(255, 218, 200, 0.5) 0%, rgba(250, 200, 180, 0.25) 40%, transparent 70%)",
+                    background: "linear-gradient(to left, rgba(255, 220, 230, 0.5) 0%, rgba(255, 230, 240, 0.25) 50%, transparent 100%)",
                 }}
             />
 
-            {/* Soft pink - center */}
+            {/* Warm cream/yellow center glow */}
             <div
-                className="absolute top-[30%] left-[25%] w-[50vw] h-[50vh]"
+                className="absolute top-[20%] left-[30%] w-[40vw] h-[60vh]"
                 style={{
-                    background: "radial-gradient(ellipse at 50% 50%, rgba(255, 210, 220, 0.35) 0%, rgba(248, 200, 210, 0.15) 50%, transparent 70%)",
+                    background: "radial-gradient(ellipse at 50% 50%, rgba(255, 250, 230, 0.5) 0%, rgba(255, 245, 220, 0.2) 50%, transparent 70%)",
                 }}
             />
 
-            {/* Purple accent - top right */}
+            {/* Soft lavender hint - top right */}
             <div
-                className="absolute top-0 right-[5%] w-[40vw] h-[45vh]"
+                className="absolute top-0 right-[10%] w-[35vw] h-[40vh]"
                 style={{
-                    background: "radial-gradient(ellipse at 70% 20%, rgba(200, 180, 220, 0.4) 0%, rgba(220, 200, 235, 0.2) 40%, transparent 65%)",
+                    background: "radial-gradient(ellipse at 60% 30%, rgba(235, 225, 250, 0.4) 0%, transparent 60%)",
                 }}
             />
 
-            {/* Warm golden glow - bottom center */}
+            {/* Light peach - bottom center */}
             <div
-                className="absolute bottom-0 left-[20%] w-[60vw] h-[45vh]"
+                className="absolute bottom-0 left-[25%] w-[50vw] h-[40vh]"
                 style={{
-                    background: "radial-gradient(ellipse at 50% 90%, rgba(255, 230, 200, 0.45) 0%, rgba(250, 220, 190, 0.2) 50%, transparent 70%)",
+                    background: "radial-gradient(ellipse at 50% 80%, rgba(255, 235, 220, 0.4) 0%, transparent 60%)",
                 }}
             />
 
-            {/* Soft lilac - bottom left */}
+            {/* Subtle mint - bottom left */}
             <div
-                className="absolute bottom-[5%] left-0 w-[35vw] h-[40vh]"
+                className="absolute bottom-[10%] left-0 w-[30vw] h-[35vh]"
                 style={{
-                    background: "radial-gradient(ellipse at 15% 80%, rgba(220, 200, 240, 0.35) 0%, transparent 60%)",
-                }}
-            />
-
-            {/* Light coral touch - bottom right */}
-            <div
-                className="absolute bottom-[10%] right-[10%] w-[30vw] h-[35vh]"
-                style={{
-                    background: "radial-gradient(ellipse at 80% 70%, rgba(255, 200, 190, 0.3) 0%, transparent 55%)",
+                    background: "radial-gradient(ellipse at 20% 70%, rgba(210, 245, 240, 0.35) 0%, transparent 55%)",
                 }}
             />
         </div>

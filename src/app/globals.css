@@ -1,41 +1,41 @@
 @import "tailwindcss";
 
-/* Warm Dreamy Pastel Color Palette - Purple & Warm Tones */
+/* Light Airy Pastel Color Palette - Positive & Uplifting */
 :root {
-  /* Warm white backgrounds */
+  /* Light airy backgrounds */
   --background: #fefefe;
-  --background-soft: #fdfaf8;
-  --background-mist: #faf8fc;
+  --background-soft: #f8fcfd;
+  --background-mist: #fdf9fa;
 
   /* Soft dark foreground for readability */
   --foreground: #2d2d2d;
   --foreground-muted: #6b6b6b;
   --foreground-soft: #a0a0a0;
 
-  /* Soft purple/lavender - primary accent */
-  --primary: #d8bfe7;
-  --primary-light: #e8d8f2;
-  --primary-soft: #f5f0f9;
+  /* Soft cyan/aqua - primary accent */
+  --primary: #c8e6f5;
+  --primary-light: #dff0f8;
+  --primary-soft: #f0f8fb;
 
-  /* Warm peach/coral - secondary */
-  --secondary: #ffdac8;
-  --secondary-light: #ffe8dc;
-  --secondary-soft: #fff5f0;
+  /* Warm cream/yellow - secondary */
+  --secondary: #fff5e6;
+  --secondary-light: #fffaf0;
+  --secondary-soft: #fffcf8;
 
-  /* Soft pink - accent */
-  --accent: #ffd2dc;
-  --accent-light: #ffe5eb;
-  --accent-soft: #fff5f7;
+  /* Soft pink/rose - accent */
+  --accent: #ffdce6;
+  --accent-light: #ffebf0;
+  --accent-soft: #fff5f8;
 
-  /* Warm golden peach */
-  --warm: #ffe6c8;
-  --warm-light: #fff0dc;
-  --warm-soft: #fff8f0;
+  /* Light peach warmth */
+  --warm: #ffebdc;
+  --warm-light: #fff3eb;
+  --warm-soft: #fff9f5;
 
-  /* Rich lavender - purple tones */
-  --lavender: #dcc8f0;
-  --lavender-light: #ebe0f5;
-  --lavender-soft: #f8f5fc;
+  /* Soft lavender - purple hint */
+  --lavender: #ebe1fa;
+  --lavender-light: #f3eefb;
+  --lavender-soft: #f9f7fd;
 }
 
 @theme inline {
