@@ -480,7 +480,7 @@ export function Footer({ locale = 'en' }: FooterProps) {
                                             </a>
                                         ) : (
                                             <Link
-                                                href={`/${locale}${link.href}`}
+                                                href={link.href === '/blog' ? `/${locale}${link.href}` : link.href}
                                                 className="text-sm text-[#6b6b6b] hover:text-[#9bb8c4] transition-colors"
                                             >
                                                 {link.name}
@@ -498,10 +498,10 @@ export function Footer({ locale = 'en' }: FooterProps) {
                         © {new Date().getFullYear()} Codot. {text.copyright}
                     </p>
                     <div className="flex gap-6">
-                        <Link href={`/${locale}/privacy`} className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
+                        <Link href="/privacy" className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
                             {text.privacy}
                         </Link>
-                        <Link href={`/${locale}/terms`} className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
+                        <Link href="/terms" className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
                             {text.terms}
                         </Link>
                     </div>

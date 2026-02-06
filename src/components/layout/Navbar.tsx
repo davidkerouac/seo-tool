@@ -151,7 +151,7 @@ export function Navbar({ locale = 'en' }: NavbarProps) {
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
-                                href={`/${locale}${link.href}`}
+                                href={link.href === '/blog' ? `/${locale}${link.href}` : link.href}
                                 className="text-sm font-medium text-[#6b6b6b] hover:text-[#2d2d2d] transition-colors duration-300"
                             >
                                 {link.name}
@@ -190,7 +190,7 @@ export function Navbar({ locale = 'en' }: NavbarProps) {
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
-                                    href={`/${locale}${link.href}`}
+                                    href={link.href === '/blog' ? `/${locale}${link.href}` : link.href}
                                     className="text-base font-medium text-[#6b6b6b] hover:text-[#2d2d2d] px-2 transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
