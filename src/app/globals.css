@@ -1,41 +1,41 @@
 @import "tailwindcss";
 
-/* Sunny Monet Impressionist Color Palette - Warm & Positive */
+/* Dreamy Soft Pastel Color Palette - Like Morning Mist */
 :root {
-  /* Bright, sunny backgrounds - warm cream tones */
-  --background: #fffdf8;
-  --background-soft: #fff9f0;
-  --background-mist: #fff5e6;
+  /* Almost white backgrounds with subtle warmth */
+  --background: #fefefe;
+  --background-soft: #fcfcfc;
+  --background-mist: #fafafa;
 
-  /* Warm foreground - chocolate brown, not cold gray */
-  --foreground: #5d4e42;
-  --foreground-muted: #8b7355;
-  --foreground-soft: #b8a590;
+  /* Soft dark foreground for readability */
+  --foreground: #2d2d2d;
+  --foreground-muted: #6b6b6b;
+  --foreground-soft: #a0a0a0;
 
-  /* Sunny sky blue - bright and warm */
-  --primary: #4eb8d4;
-  --primary-light: #7fd4eb;
-  --primary-soft: #d4f1f9;
+  /* Dreamy pale cyan - like the left edge of the image */
+  --primary: #c5e5ed;
+  --primary-light: #dff0f5;
+  --primary-soft: #f0f9fb;
 
-  /* Golden sunshine - warm yellow */
-  --secondary: #f5b842;
-  --secondary-light: #ffd06a;
-  --secondary-soft: #fff3d4;
+  /* Soft peachy cream - very subtle */
+  --secondary: #f5e8d8;
+  --secondary-light: #faf3eb;
+  --secondary-soft: #fdfaf6;
 
-  /* Coral pink - warm and cheerful */
-  --accent: #f4978e;
-  --accent-light: #ffc4bc;
-  --accent-soft: #fff0ee;
+  /* Pale blush pink - barely there */
+  --accent: #f8e0dd;
+  --accent-light: #fbedeb;
+  --accent-soft: #fef7f6;
 
-  /* Warm peach - soft and inviting */
-  --warm: #ffb385;
-  --warm-light: #ffd4b8;
-  --warm-soft: #fff2e8;
+  /* Soft peach - dreamy warmth */
+  --warm: #fae5dc;
+  --warm-light: #fcf0eb;
+  --warm-soft: #fef8f5;
 
-  /* Soft lavender - keeps some balance */
-  --lavender: #c9a8e0;
-  --lavender-light: #e2d0f0;
-  --lavender-soft: #f8f0ff;
+  /* Pale lavender - soft purple hint */
+  --lavender: #e8e0f0;
+  --lavender-light: #f2eef8;
+  --lavender-soft: #f9f7fc;
 }
 
 @theme inline {
@@ -102,7 +102,7 @@ body {
   );
 }
 
-/* Custom Scrollbar - warm accent */
+/* Custom Scrollbar - soft pastel */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -112,30 +112,30 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-light);
+  background: var(--primary-light);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
+  background: var(--primary);
 }
 
 /* Custom Utilities for Glassmorphism and Gradients */
 @utility glass {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(245, 184, 66, 0.15);
+  border: 1px solid rgba(232, 224, 240, 0.3);
 }
 
 @utility glass-monet {
   background: linear-gradient(
     135deg,
-    rgba(255, 253, 248, 0.85) 0%,
-    rgba(255, 243, 212, 0.6) 50%,
-    rgba(255, 240, 238, 0.7) 100%
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(240, 249, 251, 0.7) 50%,
+    rgba(253, 247, 246, 0.7) 100%
   );
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(245, 184, 66, 0.12);
+  border: 1px solid rgba(232, 224, 240, 0.25);
 }
 
 @utility text-gradient {

@@ -133,16 +133,16 @@ export function Navbar({ locale = 'en' }: NavbarProps) {
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
                 isScrolled
-                    ? "bg-[#fffdf8]/90 backdrop-blur-xl border-b border-[#f5b842]/15 shadow-sm"
-                    : "bg-gradient-to-b from-[#fffdf8]/60 to-transparent backdrop-blur-sm"
+                    ? "bg-white/90 backdrop-blur-xl border-b border-[#e8e0f0]/40 shadow-sm"
+                    : "bg-gradient-to-b from-white/60 to-transparent backdrop-blur-sm"
             )}
         >
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between h-16 md:h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <span className="text-2xl font-bold font-display text-[#5d4e42]">
-                            Codot<span className="text-[#f5b842]">.ai</span>
+                        <span className="text-2xl font-bold font-display text-[#2d2d2d]">
+                            Codot<span className="text-[#9bb8c4]">.ai</span>
                         </span>
                     </Link>
 
@@ -152,7 +152,7 @@ export function Navbar({ locale = 'en' }: NavbarProps) {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="text-sm font-medium text-[#8b7355] hover:text-[#5d4e42] transition-colors duration-300"
+                                className="text-sm font-medium text-[#6b6b6b] hover:text-[#2d2d2d] transition-colors duration-300"
                             >
                                 {link.name}
                             </Link>
@@ -169,7 +169,7 @@ export function Navbar({ locale = 'en' }: NavbarProps) {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden text-[#5d4e42]"
+                        className="md:hidden text-[#2d2d2d]"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         {isMobileMenuOpen ? <X /> : <Menu />}
@@ -184,20 +184,20 @@ export function Navbar({ locale = 'en' }: NavbarProps) {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-full left-0 right-0 bg-[#fffdf8]/95 backdrop-blur-xl border-b border-[#f5b842]/15 p-4 md:hidden shadow-lg"
+                        className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-[#e8e0f0]/40 p-4 md:hidden shadow-lg"
                     >
                         <nav className="flex flex-col gap-4">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-base font-medium text-[#8b7355] hover:text-[#5d4e42] px-2 transition-colors"
+                                    className="text-base font-medium text-[#6b6b6b] hover:text-[#2d2d2d] px-2 transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.name}
                                 </Link>
                             ))}
-                            <div className="h-px bg-[#f5b842]/20 my-2" />
+                            <div className="h-px bg-[#e8e0f0]/50 my-2" />
 
                             <div className="px-2">
                                 <LanguageSwitcher currentLocale={locale} />

@@ -33,9 +33,9 @@ export function BlogSidebar({ categories, activeCategory, locale = 'en' }: BlogS
 
   return (
     <aside className="w-full lg:w-72 shrink-0">
-      <div className="sticky top-32 bg-[#fffdf8]/85 backdrop-blur-sm rounded-2xl border border-[#f5b842]/20 p-6 shadow-sm">
-        <h3 className="font-bold text-lg mb-6 text-[#5d4e42] flex items-center gap-2">
-          <Layers className="w-5 h-5 text-[#f5b842]" />
+      <div className="sticky top-32 bg-white/85 backdrop-blur-sm rounded-2xl border border-[#e8e0f0]/40 p-6 shadow-sm">
+        <h3 className="font-bold text-lg mb-6 text-[#2d2d2d] flex items-center gap-2">
+          <Layers className="w-5 h-5 text-[#9bb8c4]" />
           {text.exploreTopics}
         </h3>
         <nav className="space-y-1">
@@ -43,15 +43,15 @@ export function BlogSidebar({ categories, activeCategory, locale = 'en' }: BlogS
             href={blogBasePath}
             className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 text-sm font-medium group ${
               !activeCategory
-                ? "bg-gradient-to-r from-[#f5b842] to-[#ffb385] text-white shadow-md shadow-[#f5b842]/20"
-                : "text-[#8b7355] hover:bg-[#fff9f0] hover:text-[#5d4e42]"
+                ? "bg-gradient-to-r from-[#c5e5ed] to-[#dff0f5] text-[#2d2d2d] shadow-md shadow-[#c5e5ed]/20"
+                : "text-[#6b6b6b] hover:bg-[#fafafa] hover:text-[#2d2d2d]"
             }`}
           >
-            <LayoutGrid className={`w-4 h-4 ${!activeCategory ? "text-white" : "text-[#b8a590] group-hover:text-[#8b7355]"}`} />
+            <LayoutGrid className={`w-4 h-4 ${!activeCategory ? "text-[#2d2d2d]" : "text-[#a0a0a0] group-hover:text-[#6b6b6b]"}`} />
             <span className="flex-1">{text.allPosts}</span>
           </Link>
 
-          <div className="my-2 border-t border-[#f5b842]/15 mx-2" />
+          <div className="my-2 border-t border-[#e8e0f0]/30 mx-2" />
 
           {categories.map((cat) => (
             <Link
@@ -59,17 +59,17 @@ export function BlogSidebar({ categories, activeCategory, locale = 'en' }: BlogS
               href={`${blogBasePath}/${encodeURIComponent(cat.category)}`}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 text-sm font-medium group ${
                 activeCategory === cat.category
-                  ? "bg-gradient-to-r from-[#f4978e] to-[#ffc4bc] text-white shadow-md shadow-[#f4978e]/20"
-                  : "text-[#8b7355] hover:bg-[#fff9f0] hover:text-[#5d4e42]"
+                  ? "bg-gradient-to-r from-[#f8e0dd] to-[#fbedeb] text-[#2d2d2d] shadow-md shadow-[#f8e0dd]/20"
+                  : "text-[#6b6b6b] hover:bg-[#fafafa] hover:text-[#2d2d2d]"
               }`}
             >
-              <Hash className={`w-4 h-4 ${activeCategory === cat.category ? "text-white" : "text-[#b8a590] group-hover:text-[#8b7355]"}`} />
+              <Hash className={`w-4 h-4 ${activeCategory === cat.category ? "text-[#2d2d2d]" : "text-[#a0a0a0] group-hover:text-[#6b6b6b]"}`} />
               <span className="flex-1 truncate">{cat.category}</span>
               <span
                 className={`text-xs py-0.5 px-2 rounded-full min-w-[1.5rem] text-center ${
                   activeCategory === cat.category
-                    ? "bg-white/25 text-white"
-                    : "bg-[#fff9f0] text-[#b8a590] group-hover:bg-white group-hover:shadow-sm"
+                    ? "bg-white/50 text-[#2d2d2d]"
+                    : "bg-[#fafafa] text-[#a0a0a0] group-hover:bg-white group-hover:shadow-sm"
                 }`}
               >
                 {cat.count}

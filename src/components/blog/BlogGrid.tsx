@@ -52,12 +52,12 @@ export function BlogGrid({ posts, locale = 'en' }: BlogGridProps) {
 
   if (!posts || posts.length === 0) {
     return (
-      <div className="flex-1 flex flex-col items-center justify-center py-24 text-center bg-[#fffdf8]/85 rounded-2xl border border-[#f5b842]/15 border-dashed">
-        <div className="w-16 h-16 bg-[#fff9f0] rounded-full flex items-center justify-center mb-6">
-            <FolderOpen className="w-8 h-8 text-[#b8a590]" />
+      <div className="flex-1 flex flex-col items-center justify-center py-24 text-center bg-white/85 rounded-2xl border border-[#e8e0f0]/40 border-dashed">
+        <div className="w-16 h-16 bg-[#f0f9fb] rounded-full flex items-center justify-center mb-6">
+            <FolderOpen className="w-8 h-8 text-[#a0a0a0]" />
         </div>
-        <h3 className="text-xl font-bold text-[#5d4e42] mb-2">{text.title}</h3>
-        <p className="text-[#8b7355] max-w-xs mx-auto">
+        <h3 className="text-xl font-bold text-[#2d2d2d] mb-2">{text.title}</h3>
+        <p className="text-[#6b6b6b] max-w-xs mx-auto">
           {text.description}
         </p>
       </div>
@@ -83,9 +83,9 @@ export function BlogGrid({ posts, locale = 'en' }: BlogGridProps) {
           <Link
             key={post.slug}
             href={blogPath}
-            className="group flex flex-col h-full bg-[#fffdf8]/85 backdrop-blur-sm rounded-2xl border border-[#f5b842]/15 hover:border-[#f5b842]/35 hover:shadow-xl hover:shadow-[#f5b842]/10 transition-all duration-500 overflow-hidden"
+            className="group flex flex-col h-full bg-white/85 backdrop-blur-sm rounded-2xl border border-[#e8e0f0]/30 hover:border-[#c5e5ed]/50 hover:shadow-xl hover:shadow-[#c5e5ed]/10 transition-all duration-500 overflow-hidden"
           >
-            <div className="aspect-[16/9] bg-gradient-to-br from-[#fff9f0] to-[#fff5e6] relative overflow-hidden">
+            <div className="aspect-[16/9] bg-gradient-to-br from-[#f0f9fb] to-[#fafafa] relative overflow-hidden">
               {coverImageUrl ? (
                 <Image
                   src={coverImageUrl}
@@ -96,32 +96,32 @@ export function BlogGrid({ posts, locale = 'en' }: BlogGridProps) {
                   unoptimized
                 />
               ) : (
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#fff3d4]/40 to-[#fff0ee]/40 text-[#b8a590]">
+                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#f0f9fb]/60 to-[#fdf7f6]/60 text-[#a0a0a0]">
                   <span className="text-sm font-medium">No Image</span>
                 </div>
               )}
               <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full bg-[#fffdf8]/90 backdrop-blur-sm text-xs font-bold text-[#f5b842] shadow-sm">
+                  <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-xs font-bold text-[#6b6b6b] shadow-sm">
                       {post.category}
                   </span>
               </div>
             </div>
 
             <div className="p-6 flex-1 flex flex-col">
-              <div className="flex items-center gap-2 text-sm text-[#b8a590] mb-3">
+              <div className="flex items-center gap-2 text-sm text-[#a0a0a0] mb-3">
                 <Calendar className="w-4 h-4" />
                 <span>{formattedDate}</span>
               </div>
 
-              <h3 className="text-xl font-bold text-[#5d4e42] mb-3 group-hover:text-[#f5b842] transition-colors duration-300 line-clamp-2 leading-tight">
+              <h3 className="text-xl font-bold text-[#2d2d2d] mb-3 group-hover:text-[#7eb8c8] transition-colors duration-300 line-clamp-2 leading-tight">
                 {post.title}
               </h3>
 
-              <p className="text-[#8b7355] mb-6 line-clamp-3 text-sm leading-relaxed flex-1">
+              <p className="text-[#6b6b6b] mb-6 line-clamp-3 text-sm leading-relaxed flex-1">
                 {post.description}
               </p>
 
-              <div className="flex items-center text-[#f5b842] font-bold text-sm group-hover:translate-x-1 transition-transform duration-300">
+              <div className="flex items-center text-[#9bb8c4] font-bold text-sm group-hover:translate-x-1 transition-transform duration-300">
                 {text.readArticle} <ArrowRight className="w-4 h-4 ml-2" />
               </div>
             </div>
