@@ -20,7 +20,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "About", href: "/about" },
             { name: "Careers", href: "/careers" },
             { name: "Legal", href: "/legal" },
-            { name: "Privacy", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Privacy", href: "/privacy" },
         ],
     },
     zh: {
@@ -40,7 +40,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "关于我们", href: "/about" },
             { name: "招聘", href: "/careers" },
             { name: "法律条款", href: "/legal" },
-            { name: "隐私政策", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "隐私政策", href: "/privacy" },
         ],
     },
     ja: {
@@ -60,7 +60,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "概要", href: "/about" },
             { name: "採用情報", href: "/careers" },
             { name: "法的情報", href: "/legal" },
-            { name: "プライバシー", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "プライバシー", href: "/privacy" },
         ],
     },
     ar: {
@@ -80,7 +80,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "عنا", href: "/about" },
             { name: "الوظائف", href: "/careers" },
             { name: "قانوني", href: "/legal" },
-            { name: "الخصوصية", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "الخصوصية", href: "/privacy" },
         ],
     },
     ko: {
@@ -100,7 +100,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "소개", href: "/about" },
             { name: "채용", href: "/careers" },
             { name: "법적 고지", href: "/legal" },
-            { name: "개인정보 보호", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "개인정보 보호", href: "/privacy" },
         ],
     },
     de: {
@@ -120,7 +120,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "Über uns", href: "/about" },
             { name: "Karriere", href: "/careers" },
             { name: "Rechtliches", href: "/legal" },
-            { name: "Datenschutz", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Datenschutz", href: "/privacy" },
         ],
     },
     fr: {
@@ -140,7 +140,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "À propos", href: "/about" },
             { name: "Carrières", href: "/careers" },
             { name: "Mentions légales", href: "/legal" },
-            { name: "Confidentialité", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Confidentialité", href: "/privacy" },
         ],
     },
     es: {
@@ -160,7 +160,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "Acerca de", href: "/about" },
             { name: "Carreras", href: "/careers" },
             { name: "Legal", href: "/legal" },
-            { name: "Privacidad", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Privacidad", href: "/privacy" },
         ],
     },
     ru: {
@@ -180,7 +180,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "О нас", href: "/about" },
             { name: "Карьера", href: "/careers" },
             { name: "Правовая информация", href: "/legal" },
-            { name: "Конфиденциальность", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Конфиденциальность", href: "/privacy" },
         ],
     },
     it: {
@@ -200,7 +200,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "Chi siamo", href: "/about" },
             { name: "Carriere", href: "/careers" },
             { name: "Legale", href: "/legal" },
-            { name: "Privacy", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Privacy", href: "/privacy" },
         ],
     },
     nl: {
@@ -220,7 +220,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "Over ons", href: "/about" },
             { name: "Carrière", href: "/careers" },
             { name: "Juridisch", href: "/legal" },
-            { name: "Privacy", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Privacy", href: "/privacy" },
         ],
     },
     pt: {
@@ -240,7 +240,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "Sobre", href: "/about" },
             { name: "Carreiras", href: "/careers" },
             { name: "Legal", href: "/legal" },
-            { name: "Privacidade", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Privacidade", href: "/privacy" },
         ],
     },
     sv: {
@@ -260,7 +260,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "Om oss", href: "/about" },
             { name: "Karriär", href: "/careers" },
             { name: "Juridiskt", href: "/legal" },
-            { name: "Integritet", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Integritet", href: "/privacy" },
         ],
     },
     no: {
@@ -280,7 +280,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "Om oss", href: "/about" },
             { name: "Karriere", href: "/careers" },
             { name: "Juridisk", href: "/legal" },
-            { name: "Personvern", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Personvern", href: "/privacy" },
         ],
     },
     da: {
@@ -300,7 +300,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "Om os", href: "/about" },
             { name: "Karriere", href: "/careers" },
             { name: "Juridisk", href: "/legal" },
-            { name: "Privatliv", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Privatliv", href: "/privacy" },
         ],
     },
     fi: {
@@ -320,7 +320,7 @@ const footerLinksConfig: Record<string, Record<string, Array<{ name: string; hre
             { name: "Tietoa meistä", href: "/about" },
             { name: "Ura", href: "/careers" },
             { name: "Oikeudelliset", href: "/legal" },
-            { name: "Tietosuoja", href: "https://codot.ai/private_policy.html", external: true },
+            { name: "Tietosuoja", href: "/privacy" },
         ],
     },
 };
@@ -501,14 +501,9 @@ export function Footer({ locale = 'en' }: FooterProps) {
                         © {new Date().getFullYear()} Codot. {text.copyright}
                     </p>
                     <div className="flex gap-6">
-                        <a
-                            href="https://codot.ai/private_policy.html"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors"
-                        >
+                        <Link href="/privacy" className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
                             {text.privacy}
-                        </a>
+                        </Link>
                         <Link href="/terms" className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
                             {text.terms}
                         </Link>
