@@ -140,7 +140,7 @@ export function Navbar({ locale = 'en' }: NavbarProps) {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between h-16 md:h-20">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2">
+                    <Link href={`/${locale}`} className="flex items-center gap-2">
                         <span className="text-2xl font-bold font-display text-[#2d2d2d]">
                             Codot<span className="text-[#9bb8c4]">.ai</span>
                         </span>
@@ -151,7 +151,7 @@ export function Navbar({ locale = 'en' }: NavbarProps) {
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
-                                href={link.href}
+                                href={`/${locale}${link.href}`}
                                 className="text-sm font-medium text-[#6b6b6b] hover:text-[#2d2d2d] transition-colors duration-300"
                             >
                                 {link.name}
@@ -190,7 +190,7 @@ export function Navbar({ locale = 'en' }: NavbarProps) {
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
-                                    href={link.href}
+                                    href={`/${locale}${link.href}`}
                                     className="text-base font-medium text-[#6b6b6b] hover:text-[#2d2d2d] px-2 transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >

@@ -437,7 +437,7 @@ export function Footer({ locale = 'en' }: FooterProps) {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
                     <div className="col-span-2 md:col-span-1">
-                        <Link href="/" className="flex items-center gap-2 mb-4">
+                        <Link href={`/${locale}`} className="flex items-center gap-2 mb-4">
                             <span className="text-2xl font-bold font-display text-[#2d2d2d]">
                                 Codot<span className="text-[#9bb8c4]">.ai</span>
                             </span>
@@ -480,7 +480,7 @@ export function Footer({ locale = 'en' }: FooterProps) {
                                             </a>
                                         ) : (
                                             <Link
-                                                href={link.href}
+                                                href={`/${locale}${link.href}`}
                                                 className="text-sm text-[#6b6b6b] hover:text-[#9bb8c4] transition-colors"
                                             >
                                                 {link.name}
@@ -498,10 +498,10 @@ export function Footer({ locale = 'en' }: FooterProps) {
                         © {new Date().getFullYear()} Codot. {text.copyright}
                     </p>
                     <div className="flex gap-6">
-                        <Link href="/privacy" className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
+                        <Link href={`/${locale}/privacy`} className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
                             {text.privacy}
                         </Link>
-                        <Link href="/terms" className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
+                        <Link href={`/${locale}/terms`} className="text-sm text-[#a0a0a0] hover:text-[#2d2d2d] transition-colors">
                             {text.terms}
                         </Link>
                     </div>
