@@ -57,23 +57,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
-  // Blog posts (excluding "General" category)
+  // Blog posts
   let blogRoutes: MetadataRoute.Sitemap = []
   try {
     const posts = await getAllBlogPosts()
     if (Array.isArray(posts)) {
-      blogRoutes = posts
-        .filter((post) => post.category !== 'General')
-        .map((post) => {
-          const lastModified = safeDate(post.updated_at || post.created_at) || new Date()
+      blogRoutes = posts.map((post) => {
+        const lastModified = safeDate(post.updated_at || post.created_at) || new Date()
 
-          return {
-            url: `${baseUrl}${buildBlogPath(post)}`,
-            lastModified,
-            changeFrequency: 'weekly' as const,
-            priority: 0.7,
-          }
-        })
+        return {
+          url: `${baseUrl}${buildBlogPath(post)}`,
+          lastModified,
+          changeFrequency: 'weekly' as const,
+          priority: 0.7,
+        }
+      })
     }
   } catch (error) {
     console.error('Failed to fetch blog posts for sitemap:', error)
