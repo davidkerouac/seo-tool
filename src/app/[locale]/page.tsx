@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Mic, Brain, Calendar, Bell, RefreshCw, Book, Tag, MessageSquare, Smartphone, Watch, Globe, MessageCircle, CheckCircle2, Utensils, Flame, Users, StickyNote, Check, X as XIcon, ChevronDown, Briefcase, GraduationCap } from "lucide-react";
 import { MessageDialog } from "@/components/ui/MessageDialog";
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, redirect } from "next/navigation";
 import type { Locale } from "@/i18n/config";
 
 // Client-side dictionary loading

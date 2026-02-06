@@ -37,6 +37,13 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Redirect /en to / (canonical - avoid duplicate content)
+  if (pathname === '/en' || pathname.startsWith('/en/')) {
+    const newPathname = pathname === '/en' ? '/' : pathname.replace(/^\/en/, '');
+    const newUrl = new URL(newPathname || '/', request.url);
+    return NextResponse.redirect(newUrl, { status: 301 });
+  }
+
   // Only redirect the homepage to a locale-prefixed path.
   if (pathname !== '/') {
     return NextResponse.next();
