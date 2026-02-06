@@ -41,6 +41,62 @@ const nextConfig: NextConfig = {
         destination: "/blog",
         permanent: false,
       },
+      // Redirect non-existent pages to appropriate existing pages
+      {
+        source: "/careers",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/legal",
+        destination: "https://codot.ai/privacy_policy",
+        permanent: true,
+      },
+      {
+        source: "/terms",
+        destination: "https://codot.ai/privacy_policy",
+        permanent: true,
+      },
+      {
+        source: "/community",
+        destination: "/faq",
+        permanent: true,
+      },
+      {
+        source: "/changelog",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/docs",
+        destination: "/faq",
+        permanent: true,
+      },
+      {
+        source: "/smart-tags",
+        destination: "/features",
+        permanent: true,
+      },
+      {
+        source: "/voice-assistant",
+        destination: "/features",
+        permanent: true,
+      },
+      {
+        source: "/task-organization",
+        destination: "/features",
+        permanent: true,
+      },
+      {
+        source: "/ai-learning",
+        destination: "/features",
+        permanent: true,
+      },
+      {
+        source: "/knowledge-base",
+        destination: "/faq",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {
