@@ -449,9 +449,6 @@ export function Footer({ locale = 'en' }: FooterProps) {
                             <a href="mailto:david@silverroc.com" className="block text-sm text-[#6b6b6b] hover:text-[#2d2d2d] transition-colors">
                                 david@silverroc.com
                             </a>
-                            <a href="tel:+6596665907" className="block text-sm text-[#6b6b6b] hover:text-[#2d2d2d] transition-colors">
-                                +65 9666 5907
-                            </a>
                         </div>
                         <div className="flex gap-4">
                             <a href="#" className="text-[#a0a0a0] hover:text-[#9bb8c4] transition-colors">
