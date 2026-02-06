@@ -1,6 +1,9 @@
 import { MetadataRoute } from 'next'
 import { buildBlogPath, getAllBlogPosts } from '@/lib/blog-api'
 
+// Supported locales (excluding 'en' which is the default/canonical)
+const locales = ['zh', 'ja', 'ko', 'ar', 'de', 'fr', 'es', 'ru', 'it', 'nl', 'pt', 'sv', 'no', 'da', 'fi']
+
 function safeDate(value?: string) {
   if (!value) return undefined
   const date = new Date(value)
@@ -10,12 +13,11 @@ function safeDate(value?: string) {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://codot.ai'
 
-  // Static pages - SEO optimized routes
+  // Static pages - SEO optimized routes (canonical/default language)
   const staticRoutes = [
     '',
     '/about',
     '/features',
-    '/private_policy.html',
     '/pricing',
     '/faq',
     '/blog',
@@ -39,6 +41,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: route === '' ? 1 : 0.8,
   }))
 
+  // Multi-language home pages (/${locale})
+  const localeHomeRoutes = locales.map((locale) => ({
+    url: `${baseUrl}/${locale}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }))
+
+  // Multi-language blog list pages (/${locale}/blog)
+  const localeBlogRoutes = locales.map((locale) => ({
+    url: `${baseUrl}/${locale}/blog`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }))
+
   // Blog posts
   let blogRoutes: MetadataRoute.Sitemap = []
   try {
@@ -59,5 +77,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error('Failed to fetch blog posts for sitemap:', error)
   }
 
-  return [...routes, ...blogRoutes]
+  return [...routes, ...localeHomeRoutes, ...localeBlogRoutes, ...blogRoutes]
 }

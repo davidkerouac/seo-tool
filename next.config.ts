@@ -4,6 +4,18 @@ const nextConfig: NextConfig = {
   output: "standalone",
   async redirects() {
     return [
+      // Redirect /en to / (canonical - avoid duplicate content)
+      {
+        source: "/en",
+        destination: "/",
+        permanent: true,
+      },
+      // Redirect /blog/index.html to /blog
+      {
+        source: "/blog/index.html",
+        destination: "/blog",
+        permanent: true,
+      },
       // Redirect old .html blog URLs to clean slug URLs
       // e.g., /blog/codot-adhd.html → /blog/codot-adhd
       {
