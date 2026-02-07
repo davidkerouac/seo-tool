@@ -4,12 +4,6 @@ const nextConfig: NextConfig = {
   output: "standalone",
   async redirects() {
     return [
-      // Redirect /en to / (canonical - avoid duplicate content)
-      {
-        source: "/en",
-        destination: "/",
-        permanent: true,
-      },
       // Redirect /blog/index.html to /blog
       {
         source: "/blog/index.html",
