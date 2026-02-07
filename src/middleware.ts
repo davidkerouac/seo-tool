@@ -1,28 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { locales, defaultLocale } from './i18n/config';
-
-function getLocale(request: NextRequest): string {
-  // Check if locale is in cookie
-  const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value;
-  if (cookieLocale && locales.includes(cookieLocale as typeof locales[number])) {
-    return cookieLocale;
-  }
-
-  // Check Accept-Language header
-  const acceptLanguage = request.headers.get('Accept-Language');
-  if (acceptLanguage) {
-    const preferredLocale = acceptLanguage
-      .split(',')
-      .map((lang) => lang.split(';')[0].trim().substring(0, 2))
-      .find((lang) => locales.includes(lang as typeof locales[number]));
-
-    if (preferredLocale) {
-      return preferredLocale;
-    }
-  }
-
-  return defaultLocale;
-}
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -37,36 +13,14 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Redirect /en to / (canonical - avoid duplicate content)
+  // Redirect /en and /en/* to canonical URLs (/ is the English version)
   if (pathname === '/en' || pathname.startsWith('/en/')) {
     const newPathname = pathname === '/en' ? '/' : pathname.replace(/^\/en/, '');
     const newUrl = new URL(newPathname || '/', request.url);
     return NextResponse.redirect(newUrl, { status: 301 });
   }
 
-  // Only redirect the homepage to a locale-prefixed path.
-  if (pathname !== '/') {
-    return NextResponse.next();
-  }
-
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
-
-  if (pathnameHasLocale) {
-    return NextResponse.next();
-  }
-
-  const locale = getLocale(request);
-
-  // Don't redirect if locale is English - / is the canonical English URL
-  if (locale === 'en') {
-    return NextResponse.next();
-  }
-
-  const newUrl = new URL(`/${locale}`, request.url);
-
-  return NextResponse.redirect(newUrl);
+  return NextResponse.next();
 }
 
 export const config = {
