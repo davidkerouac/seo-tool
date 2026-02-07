@@ -58,6 +58,12 @@ export function middleware(request: NextRequest) {
   }
 
   const locale = getLocale(request);
+
+  // Don't redirect if locale is English - / is the canonical English URL
+  if (locale === 'en') {
+    return NextResponse.next();
+  }
+
   const newUrl = new URL(`/${locale}`, request.url);
 
   return NextResponse.redirect(newUrl);
